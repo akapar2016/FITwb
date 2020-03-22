@@ -6,6 +6,7 @@ table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
   width: 100%;
+  line
 }
 
 td, th {
@@ -15,52 +16,78 @@ td, th {
 }
 
 tr:nth-child(even) {
-  background-color: #770000;
-  color: #dddddd;
+  background-color: #0b945f;
 }
 </style>
 </head>
 <body>
 
 <h2>FIT Weight and Balance</h2>
+<tr id="Tailnumber">Tail Number</tr>
 
 <table>
   <tr>
-    <th id="BEW">Aircarft Identification</th>
-    <th>Basic Empty Weight</th>
-    <th id="Arm">Basic Empty Arm</th>
-    <th>Basic Empty Moment</th>
+    <th>Item</th>
+    <th>Weight</th>
+    <th>Arm</th>
+    <th>Moment</th>
   </tr>
   <tr>
-    <td>N609FT</td>
-    <td>1535.4</td>
-    <td>87.60</td>
-    <td>134506.4</td>
+    <td>Basic Empty Weight</td>
+    <td id="BEW"></td>
+    <td id="Arm"></td>
+    <td id="Moment"></td>
   </tr>
   <tr>
-    <td>Centro comercial Moctezuma</td>
-    <td>Francisco Chang</td>
-    <td>Mexico</td>
+    <td>Seats 1+2</td>
+    <td id="WSeat12"></td>
+    <td id="ASeat12">80.5</td>
+    <td id="MSeat12"></td>
   </tr>
   <tr>
-    <td>Ernst Handel</td>
-    <td>Roland Mendel</td>
-    <td>Austria</td>
+    <td>Seats 3+4</td>
+    <td id="WSeat34"></td>
+    <td id="Aseat34">118.1</td>
+    <td id="MSeat34"></td>
   </tr>
   <tr>
-    <td>Island Trading</td>
-    <td>Helen Bennett</td>
-    <td>UK</td>
+    <td>Baggage</td>
+    <td id="WCargo"></td>
+    <td id="ACargo">142.8</td>
+    <td id="MCargo"></tf>
   </tr>
   <tr>
-    <td>Laughing Bacchus Winecellars</td>
-    <td>Yoshi Tannamuri</td>
-    <td>Canada</td>
+    <td>Fuel</td>
+    <td id="WFuel"></td>
+    <td class="AFuel">95.0</td>
+    <td id="MFuel"></td>
   </tr>
   <tr>
-    <td>Magazzini Alimentari Riuniti</td>
-    <td>Giovanni Rovelli</td>
-    <td>Italy</td>
+    <td>Ramp Weight</td>
+    <td id="WRamp"></td>
+    <td id="ARamp"></td>
+    <td id="MRamp"></td>
+  </tr>
+  <tr>
+    <td>Taxi Fuel Burn</td>
+    <td id="WFuelTaxi"></td>
+    <td class="AFuel">95.0</td>
+    <td id="MFuelTaxi"></td>
+  </tr>  <tr>
+    <td>TakeOff Weight</td>
+    <td id="WTakeOff"></td>
+    <td id="ATakeOff"></td>
+    <td id="MTakeOff"></td>
+  </tr>  <tr>
+    <td>Trip Fuel Burn</td>
+    <td id="WFuelTrip"></td>
+    <td class="AFuel">95.0</td>
+    <td id="WFuelTrip"></td>
+  </tr>  <tr>
+    <td>Landing Weight</td>
+    <td id="WLanding"></td>
+    <td id="ALanding"></td>
+    <td id="MLanding"></td>
   </tr>
 </table>
 
