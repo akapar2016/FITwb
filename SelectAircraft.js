@@ -1,11 +1,5 @@
-let aircraftIdUrl = 'https://raw.githubusercontent.com/akapar2016/FITwb/master/PlaneDate.json'
-let aircrafTypetUrl = 'https://raw.githubusercontent.com/akapar2016/FITwb/master/AircraftTypeData.json'
-
-let allAircraftData = JSON.parse(GetJson(aircraftIdUrl));
-let aircraftTypeData = JSON.parse(GetJson(aircrafTypetUrl));
-let aircraftData;
-let aircraftType;
-
+let aircraftIdUrl = 'https://raw.githubusercontent.com/akapar2016/FITwb/master/PlaneData.Json'
+let aircrafTypetUrl = 'https://raw.githubusercontent.com/akapar2016/FITwb/master/AircraftTypeData.Json'
 
 function GetJson(yourUrl) {
     var Httpreq = new XMLHttpRequest(); // a new request
@@ -14,6 +8,17 @@ function GetJson(yourUrl) {
     return Httpreq.responseText;
 }
 
+let allAircraftData = JSON.parse(GetJson(aircraftIdUrl));
+let aircraftTypeData = JSON.parse(GetJson(aircrafTypetUrl));
+let aircraftData;
+let aircraftType;
+
+var dropdown = document.getElementById("selectAircraft");
+for (var i = 0; i < allAircraftData.length; i++) {
+    dropdown.innerHTML = dropdown.innerHTML +
+                '<option value="' + allAircraftData[i].Tailnumber + '">' + allAircraftData[i].Tailnumber + '</option>';
+
+}
 
 function selectAircraft () {
     var aircraftId = document.getElementById("aircraftType").value;

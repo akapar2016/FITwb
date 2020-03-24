@@ -1,95 +1,102 @@
 <!DOCTYPE html>
 <html>
-<head>
-<style>
-table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-  line
-}
+  <head>
+    <style>
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+      line
+    }
 
-td, th {
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 8px;
-}
+    td, th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
 
-tr:nth-child(even) {
-  background-color: #0b945f;
-}
-</style>
-</head>
-<body>
+    tr:nth-child(even) {
+      background-color: #0b945f;
+    }
+    </style>
+  </head>
 
-<h2>FIT Weight and Balance</h2>
-<tr id="Tailnumber">Tail Number</tr>
+  <body>
 
-<table>
-  <tr>
-    <th>Item</th>
-    <th>Weight</th>
-    <th>Arm</th>
-    <th>Moment</th>
-  </tr>
-  <tr>
-    <td>Basic Empty Weight</td>
-    <td id="BEW"></td>
-    <td id="Arm"></td>
-    <td id="Moment"></td>
-  </tr>
-  <tr>
-    <td>Seats 1+2</td>
-    <td id="WSeat12"></td>
-    <td id="ASeat12">80.5</td>
-    <td id="MSeat12"></td>
-  </tr>
-  <tr>
-    <td>Seats 3+4</td>
-    <td id="WSeat34"></td>
-    <td id="Aseat34">118.1</td>
-    <td id="MSeat34"></td>
-  </tr>
-  <tr>
-    <td>Baggage</td>
-    <td id="WCargo"></td>
-    <td id="ACargo">142.8</td>
-    <td id="MCargo"></tf>
-  </tr>
-  <tr>
-    <td>Fuel</td>
-    <td id="WFuel"></td>
-    <td class="AFuel">95.0</td>
-    <td id="MFuel"></td>
-  </tr>
-  <tr>
-    <td>Ramp Weight</td>
-    <td id="WRamp"></td>
-    <td id="ARamp"></td>
-    <td id="MRamp"></td>
-  </tr>
-  <tr>
-    <td>Taxi Fuel Burn</td>
-    <td id="WFuelTaxi"></td>
-    <td class="AFuel">95.0</td>
-    <td id="MFuelTaxi"></td>
-  </tr>  <tr>
-    <td>TakeOff Weight</td>
-    <td id="WTakeOff"></td>
-    <td id="ATakeOff"></td>
-    <td id="MTakeOff"></td>
-  </tr>  <tr>
-    <td>Trip Fuel Burn</td>
-    <td id="WFuelTrip"></td>
-    <td class="AFuel">95.0</td>
-    <td id="WFuelTrip"></td>
-  </tr>  <tr>
-    <td>Landing Weight</td>
-    <td id="WLanding"></td>
-    <td id="ALanding"></td>
-    <td id="MLanding"></td>
-  </tr>
-</table>
+  <h2>FIT Weight and Balance</h2>
 
-</body>
+  <tr id="Tailnumber">Tail Number</tr>
+  <select id="selectAircraft">
+    <option value="">-- Select --</option>   
+  </select>
+
+  <table>
+    <tr>
+      <th>Item</th>
+      <th>Weight</th>
+      <th>Arm</th>
+      <th>Moment</th>
+    </tr>
+    <tr>
+      <td>Basic Empty Weight</td>
+      <td id="BEW"></td>
+      <td id="Arm"></td>
+      <td id="Moment"></td>
+    </tr>
+    <tr>
+      <td>Seats 1+2</td>
+      <td id="WSeat12"></td>
+      <td id="ASeat12">80.5</td>
+      <td id="MSeat12"></td>
+    </tr>
+    <tr>
+      <td>Seats 3+4</td>
+      <td id="WSeat34"></td>
+      <td id="Aseat34">118.1</td>
+      <td id="MSeat34"></td>
+    </tr>
+    <tr>
+      <td>Baggage</td>
+      <td id="WCargo"></td>
+      <td id="ACargo">142.8</td>
+      <td id="MCargo"></tf>
+    </tr>
+    <tr>
+      <td>Fuel</td>
+      <td id="WFuel"></td>
+      <td class="AFuel">95.0</td>
+      <td id="MFuel"></td>
+    </tr>
+    <tr>
+      <td>Ramp Weight</td>
+      <td id="WRamp"></td>
+      <td id="ARamp"></td>
+      <td id="MRamp"></td>
+    </tr>
+    <tr>
+      <td>Taxi Fuel Burn</td>
+      <td id="WFuelTaxi"></td>
+      <td class="AFuel">95.0</td>
+      <td id="MFuelTaxi"></td>
+    </tr>  <tr>
+      <td>TakeOff Weight</td>
+      <td id="WTakeOff"></td>
+      <td id="ATakeOff"></td>
+      <td id="MTakeOff"></td>
+    </tr>  <tr>
+      <td>Trip Fuel Burn</td>
+      <td id="WFuelTrip"></td>
+      <td class="AFuel">95.0</td>
+      <td id="WFuelTrip"></td>
+    </tr>  <tr>
+      <td>Landing Weight</td>
+      <td id="WLanding"></td>
+      <td id="ALanding"></td>
+      <td id="MLanding"></td>
+    </tr>
+  </table>
+
+  </body>
+  <script src="EditValues.js"></script>
+  <script src="SelectAircraft.js"></script>
 </html>
