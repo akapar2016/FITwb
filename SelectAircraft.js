@@ -1,5 +1,5 @@
-let aircraftIdUrl = 'https://raw.githubusercontent.com/akapar2016/FITwb/master/PlaneData.Json'
-let aircrafTypetUrl = 'https://raw.githubusercontent.com/akapar2016/FITwb/master/AircraftTypeData.Json'
+let aircraftIdUrl = 'https://raw.githubusercontent.com/akapar2016/FITwb/master/PlaneData.json'
+let aircrafTypetUrl = 'https://raw.githubusercontent.com/akapar2016/FITwb/master/AircraftTypeData.json'
 
 function GetJson(yourUrl) {
     var Httpreq = new XMLHttpRequest(); // a new request
