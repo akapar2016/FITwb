@@ -1,0 +1,233 @@
+[
+    {
+      "Tailnumber": "N602FT",
+      "AircraftType": "Warrior2",
+      "BEW": 1489,
+      "Arm": 89.28,
+      "Moment": 132932.7
+    },
+    {
+      "Tailnumber": "N609FT",
+      "AircraftType": "Warrior2",
+      "BEW": 1535.4,
+      "Arm": 87.6,
+      "Moment": 134506.4
+    },
+    {
+      "Tailnumber": "N613FT",
+      "AircraftType": "Warrior2",
+      "BEW": 1513.4,
+      "Arm": 85.73,
+      "Moment": 129743.6
+    },
+    {
+      "Tailnumber": "N617FT",
+      "AircraftType": "Warrior2",
+      "BEW": 1564.4,
+      "Arm": 85.6,
+      "Moment": 133917.4
+    },
+    {
+      "Tailnumber": "N621FT",
+      "AircraftType": "Warrior2",
+      "BEW": 1498.4,
+      "Arm": 85.01,
+      "Moment": 127383.1
+    },
+    {
+      "Tailnumber": "N623FT",
+      "AircraftType": "Warrior2",
+      "BEW": 1532.4,
+      "Arm": 87.08,
+      "Moment": 133434
+    },
+    {
+      "Tailnumber": "N624FT",
+      "AircraftType": "Warrior2",
+      "BEW": 1535.4,
+      "Arm": 87.56,
+      "Moment": 134445.2
+    },
+    {
+      "Tailnumber": "N625FT",
+      "AircraftType": "Warrior2",
+      "BEW": 1576,
+      "Arm": 86.28,
+      "Moment": 135977.3
+    },
+    {
+      "Tailnumber": "N53260",
+      "AircraftType": "Warrior3",
+      "BEW": 1592,
+      "Arm": 86.51,
+      "Moment": 137723.9
+    },
+    {
+      "Tailnumber": "N627FT",
+      "AircraftType": "Warrior3",
+      "BEW": 1600,
+      "Arm": 86.66,
+      "Moment": 138655.9
+    },
+    {
+      "Tailnumber": "N629FT",
+      "AircraftType": "Warrior3",
+      "BEW": 1610.5,
+      "Arm": 85.41,
+      "Moment": 137556.6
+    },
+    {
+      "Tailnumber": "N631FT",
+      "AircraftType": "Warrior3",
+      "BEW": 1541.6,
+      "Arm": 87.72,
+      "Moment": 135234
+    },
+    {
+      "Tailnumber": "N635FT",
+      "AircraftType": "Warrior3",
+      "BEW": 1589,
+      "Arm": 86.67,
+      "Moment": 137716.5
+    },
+    {
+      "Tailnumber": "N636FT",
+      "AircraftType": "Warrior3",
+      "BEW": 1614,
+      "Arm": 85.56,
+      "Moment": 138099.3
+    },
+    {
+      "Tailnumber": "N637FT",
+      "AircraftType": "Warrior3",
+      "BEW": 1598,
+      "Arm": 86.19,
+      "Moment": 137734.2
+    },
+    {
+      "Tailnumber": "N638FT",
+      "AircraftType": "Warrior3",
+      "BEW": 1592.7,
+      "Arm": 86.46,
+      "Moment": 137699
+    },
+    {
+      "Tailnumber": "N639FT",
+      "AircraftType": "Warrior3",
+      "BEW": 1587,
+      "Arm": 85.65,
+      "Moment": 135924.4
+    },
+    {
+      "Tailnumber": "N640FT",
+      "AircraftType": "Warrior3",
+      "BEW": 1606,
+      "Arm": 85.89,
+      "Moment": 137947.3
+    },
+    {
+      "Tailnumber": "N641FT",
+      "AircraftType": "Warrior3",
+      "BEW": 1603,
+      "Arm": 86.5,
+      "Moment": 138660.3
+    },
+    {
+      "Tailnumber": "N642FT",
+      "AircraftType": "Warrior3",
+      "BEW": 1560,
+      "Arm": 86.51,
+      "Moment": 134952.8
+    },
+    {
+      "Tailnumber": "N643FT",
+      "AircraftType": "Archer",
+      "BEW": 1712.7,
+      "Arm": 88.47,
+      "Moment": 151527.9
+    },
+    {
+      "Tailnumber": "N644FT",
+      "AircraftType": "Archer",
+      "BEW": 1709.9,
+      "Arm": 88.66,
+      "Moment": 151602.3
+    },
+    {
+      "Tailnumber": "N645FT",
+      "AircraftType": "Archer",
+      "BEW": 1708.2,
+      "Arm": 88.77,
+      "Moment": 151641.4
+    },
+    {
+      "Tailnumber": "N646FT",
+      "AircraftType": "Archer",
+      "BEW": 1708.2,
+      "Arm": 88.82,
+      "Moment": 151720.1
+    },
+    {
+      "Tailnumber": "N647FT",
+      "AircraftType": "Archer",
+      "BEW": 1711.9,
+      "Arm": 88.73,
+      "Moment": 151899.3
+    },
+    {
+      "Tailnumber": "N648FT",
+      "AircraftType": "Archer",
+      "BEW": 1713,
+      "Arm": 88.79,
+      "Moment": 152089.5
+    },
+    {
+      "Tailnumber": "N649FT",
+      "AircraftType": "Archer",
+      "BEW": 1710.2,
+      "Arm": 88.95,
+      "Moment": 152126.1
+    },
+    {
+      "Tailnumber": "N650FT",
+      "AircraftType": "Archer",
+      "BEW": 1715.2,
+      "Arm": 88.54,
+      "Moment": 151858.4
+    },
+    {
+      "Tailnumber": "N880FT",
+      "AircraftType": "Seminole",
+      "BEW": 2680,
+      "Arm": 86.67,
+      "Moment": 232275.6
+    },
+    {
+      "Tailnumber": "N881FT",
+      "AircraftType": "Seminole",
+      "BEW": 2702,
+      "Arm": 75.81,
+      "Moment": 234858.6
+    },
+    {
+      "Tailnumber": "N882FT",
+      "AircraftType": "Seminole",
+      "BEW": 26232,
+      "Arm": 86.12,
+      "Moment": 226655.3
+    },
+    {
+      "Tailnumber": "N884FT",
+      "AircraftType": "Seminole",
+      "BEW": 2677.1,
+      "Arm": 85.96,
+      "Moment": 230130.7
+    },
+    {
+      "Tailnumber": "N885FT",
+      "AircraftType": "Seminole",
+      "BEW": 2656.9,
+      "Arm": 85.71,
+      "Moment": 227720.8
+    }
+  ]

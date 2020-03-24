@@ -1,7 +1,5 @@
-AircraftType, ASeat12, ASeat34, ACargo, AFuel, FuelQuantity, MaxWeight, VaMinWeight,VaMaxWeight, Vr, Vx, Vy, VcruiseClimb, Vref, Vglide, F55, F65, F75
-Warrior,80.5,118.1,142.8,95,48,2440,1531,2440/2325,65,63,79,87,55-63,73,,,
-Archer,80.5,118.1,142.8,95,48,2550,1917,2550,65,64,76,87,54-63,76,,,
-Seminole,80.5,118.1,142.8,95,48,3800,2700,3800,75,82,88,105,70-75,88,,,
-Warrior,88,111,,,,,,,,,,,,,,,
-Archer,98,113,,,,,,,,,,,,,,,
-Seminole,112,135,,,,,,,,,,,,,,,
+AircraftType, ASeat12, ASeat34, ACargo, AFuel, FuelQuantity, MaxWeight, VaMinWeight,VaMaxWeight,VaMinSpeed,VaMaxSpeed, Vr, Vx, Vy, VcruiseClimb, Vref, Vglide, F55, F65, F75
+Warrior2,80.5,118.1,142.8,95,48,2440,1531,2440,88,111,65,63,79,87,55-63,73,,,
+Warrior3,80.5,118.1,142.8,95,48,2440,1531,2440,88,111,65,63,79,87,55-63,73,,,
+Archer,80.5,118.1,142.8,95,48,2550,1917,2550,98,113,65,64,76,87,54-63,76,,,
+Seminole,80.5,118.1,142.8,95,48,3800,2700,3800,112,135,75,82,88,105,70-75,88,,,
