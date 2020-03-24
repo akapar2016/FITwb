@@ -42,7 +42,7 @@ function loadUpInitValues(aircraftType) {
 
 
 function clearValues() {
-    document.getElementById("ASeat12").innerHTML = "";
+    document.getElementById("3ASeat12").innerHTML = "";
     document.getElementById("ASeat34").innerHTML = "";
     document.getElementById("ACargo").innerHTML = "";
     document.getElementById("AFuel").innerHTML = "";
@@ -67,32 +67,32 @@ function calculateSeat12(input) {
 }
 
 function calculateSeat34(input) {
-    (document.getElementById("MSeat34").innerHTML = 
-            document.getElementById("ASeat34").innerText * input).toFixed(1);
+    document.getElementById("MSeat34").innerHTML = 
+            (document.getElementById("ASeat34").innerText * input).toFixed(1);
     calculateTotals();
 }
 
 function calculateBaggage(input) {
-    (document.getElementById("MCargo").innerHTML = 
-            document.getElementById("ACargo").innerText * input).toFixed(1);
+    document.getElementById("MCargo").innerHTML = 
+            (document.getElementById("ACargo").innerText * input).toFixed(1);
     calculateTotals();
 }
 
 function calculateFuel(input) {
-    (document.getElementById("MFuel").innerHTML = 
-            document.getElementById("AFuel").innerText * input).toFixed(1);
+    document.getElementById("MFuel").innerHTML = 
+            (document.getElementById("AFuel").innerText * input).toFixed(1);
     calculateTotals();
 }
 
 function calculateFuelTaxi(input) {
-    (document.getElementById("MFuelTaxi").innerHTML = 
-            document.getElementById("AFuelTaxi").innerText * input).toFixed(1);
+    document.getElementById("MFuelTaxi").innerHTML = 
+            (document.getElementById("AFuelTaxi").innerText * input).toFixed(1);
     calculateTotals();
 }
 
 function calculateFuelTrip(input) {
-    (document.getElementById("MFuelTrip").innerHTML = 
-            document.getElementById("AFuelTrip").innerText * input).toFixed(1);
+    document.getElementById("MFuelTrip").innerHTML = 
+            (document.getElementById("AFuelTrip").innerText * input).toFixed(1);
     calculateTotals();
 }
 
