@@ -1,5 +1,5 @@
-let aircraftIdUrl = 'https://raw.githubusercontent.com/akapar2016/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_19-covid-Confirmed.json'
-let aircrafTypetUrl = 'https://raw.githubusercontent.com/akapar2016/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_19-covid-Confirmed.json'
+let aircraftIdUrl = 'https://raw.githubusercontent.com/akapar2016/FITwb/master/PlaneDate.json'
+let aircrafTypetUrl = 'https://raw.githubusercontent.com/akapar2016/FITwb/master/AircraftTypeData.json'
 
 let allAircraftData = JSON.parse(GetJson(aircraftIdUrl));
 let aircraftTypeData = JSON.parse(GetJson(aircrafTypetUrl));
@@ -48,3 +48,5 @@ function loadUpTableValues(aircraftType) {
     document.getElementById("FuelQuantity").innerHTML = aircraftType.FuelQuantity;
 
 }
+
+
