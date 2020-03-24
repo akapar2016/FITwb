@@ -20,10 +20,10 @@ function selectAircraft () {
     var aircraftId = document.getElementById("selectAircraft").options[document.getElementById("selectAircraft").selectedIndex].value.toString();
     var aircraftData = findAircraftData(aircraftId);
     var aircraftType = findAircraftType(aircraftData.AircraftType.toString());
-    document.getElementById("test").innerHTML = aircraftId.toString();
-    document.getElementById("test2").innerHTML = aircraftData.Tailnumber;
+    document.getElementById("aircraftType").innerHTML = aircraftData.AircraftType;
     loadUpIndValues(aircraftData);
     loadUpInitValues(aircraftType);
+    calculateTotals();
 }
 
 /**
