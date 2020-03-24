@@ -1,4 +1,4 @@
-let aircraftIdUrl = 'https://raw.githubusercontent.com/akapar2016/FITwb/master/PlaneData.json'
+let aircraftIdUrl = 'https://raw.githubusercontent.com/akapar2016/FITwb/master/indAircraftData.json'
 let aircrafTypetUrl = 'https://raw.githubusercontent.com/akapar2016/FITwb/master/AircraftTypeData.json'
 
 function GetJson(yourUrl) {
@@ -10,36 +10,48 @@ function GetJson(yourUrl) {
 
 let allAircraftData = JSON.parse(GetJson(aircraftIdUrl));
 let aircraftTypeData = JSON.parse(GetJson(aircrafTypetUrl));
-let aircraftData;
-let aircraftType;
 
 var dropdown = document.getElementById("selectAircraft");
 for (var i = 0; i < allAircraftData.length; i++) {
     dropdown.innerHTML = dropdown.innerHTML +
                 '<option value="' + allAircraftData[i].Tailnumber + '">' + allAircraftData[i].Tailnumber + '</option>';
-
 }
+
+document.getElementById("selectAircraft").addEventListener("change", selectAircraft);
 
 function selectAircraft () {
-    var aircraftId = document.getElementById("aircraftType").value;
-    aircraftData = findAircraftData(aircraftId);
-    aircraftType = findAircraftType(aircraftData.AircraftType);
 
-    loadUpInitValues(aircraftData.AircraftType);
+
+    var aircraftId = document.getElementById("selectAircraft").options[document.getElementById("selectAircraft").selectedIndex].value.toString();
+    var aircraftData = findAircraftData(aircraftId);
+    var aircraftType = findAircraftType(aircraftData.AircraftType.toString());
+    document.getElementById("test").innerHTML = aircraftId.toString();
+    document.getElementById("test2").innerHTML = aircraftData.Tailnumber;
+    loadUpInitValues(aircraftType);
 
 }
 
+/**
+ * Find aircraft JSON data fron ID
+ * @param {String} aircraftId (Tail Num)
+ */
 function findAircraftData (aircraftId) {
-    for (i in aircraftTypeData) {
-        if (aircraftId = allAircraftDate[i].Tailnumber) {
-            return allAircraftDate[i]
+    for (i in allAircraftData) {
+        if (aircraftId.toString() == allAircraftData[i].Tailnumber.toString()) {
+            return allAircraftData[i]
         }
     }
+    return "err";
 }
 
+
+/**
+ * Find Aircraft Type Data JSON from type
+ * @param {string} type 
+ */
 function findAircraftType (type) {
     for (i in aircraftTypeData) {
-        if (type = aircraftTypeData[i].Tailnumber) {
+        if (type == aircraftTypeData[i].AircraftType.toString()) {
             return aircraftTypeData[i]
         }
     }
