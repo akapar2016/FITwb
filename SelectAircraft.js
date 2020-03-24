@@ -7,28 +7,23 @@ function GetJson(yourUrl) {
     Httpreq.send(null);
     return Httpreq.responseText;
 }
-
+/**
+ * get all JSON data
+ */
 let allAircraftData = JSON.parse(GetJson(aircraftIdUrl));
 let aircraftTypeData = JSON.parse(GetJson(aircrafTypetUrl));
 
-var dropdown = document.getElementById("selectAircraft");
-for (var i = 0; i < allAircraftData.length; i++) {
-    dropdown.innerHTML = dropdown.innerHTML +
-                '<option value="' + allAircraftData[i].Tailnumber + '">' + allAircraftData[i].Tailnumber + '</option>';
-}
-
-document.getElementById("selectAircraft").addEventListener("change", selectAircraft);
-
+/**
+ * Identify Aircraft from dropdown
+ */
 function selectAircraft () {
-
-
     var aircraftId = document.getElementById("selectAircraft").options[document.getElementById("selectAircraft").selectedIndex].value.toString();
     var aircraftData = findAircraftData(aircraftId);
     var aircraftType = findAircraftType(aircraftData.AircraftType.toString());
     document.getElementById("test").innerHTML = aircraftId.toString();
     document.getElementById("test2").innerHTML = aircraftData.Tailnumber;
+    loadUpIndValues(aircraftData);
     loadUpInitValues(aircraftType);
-
 }
 
 /**
@@ -44,7 +39,6 @@ function findAircraftData (aircraftId) {
     return "err";
 }
 
-
 /**
  * Find Aircraft Type Data JSON from type
  * @param {string} type 
@@ -56,5 +50,3 @@ function findAircraftType (type) {
         }
     }
 }
-
-

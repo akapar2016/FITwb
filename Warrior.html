@@ -25,7 +25,7 @@
   <h2>FIT Weight and Balance</h2>
 
   <tr id="Tailnumber">Tail Number</tr>
-  <select id="selectAircraft">
+  <select id="selectAircraft" onchange="selectAircraft()">
     <option value="">-- Select --</option>   
   </select>
 
@@ -47,7 +47,9 @@
     </tr>
     <tr>
       <td>Seats 1+2</td>
-      <td id="WSeat12"></td>
+      <td id="WSeat12">
+        <input type="number" oninput="calculateSeat12(this.value)" placeholder="Weight in lbs" disabled></input>
+      </td>
       <td id="ASeat12"></td>
       <td id="MSeat12"></td>
     </tr>
@@ -99,6 +101,6 @@
   </table>
 
   </body>
-  <script src="EditValues.js"></script>
   <script src="SelectAircraft.js"></script>
+  <script src="EditValues.js"></script>
 </html>
