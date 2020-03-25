@@ -1,23 +1,67 @@
 
 h2 {
-  font-size: 200%;
-  text-align: center;
+font-size: 200%;
+text-align: center;
+}
+
+h3 {
+Font-size: 125%;
+text-align: center;
+}
+
+.NunVal {
+  text-align: right;
+}
+
+
+  select {
+    width: 100px;
+    height: auto;
+    margin: auto;
+}
+select:focus {
+    min-width: 100px;
+    height: auto;
+    width: auto;
+}
+#SelectHeader {
+  font-family: Georgia, 'Times New Roman';
+  border-style: hidden;
+  width: 12.5%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#WBMain, #WeatherData {
+  font-family: Georgia, 'Times New Roman';
+  border-style: hidden;
+  width: 35%;
+  margin-left: auto;
+  margin-right: auto;
   }
-  table {
-      font-family: Georgia, serif;
-      border-collapse: collapse;
-      width: 75%;
-      margin-left: auto;
-      margin-right: auto;
-    }
   
-    td, th {
-      border: .5px solid #000000;
-      text-align: left;
-      padding: 5px;
-      border-bottom: 1px solid rgb(12, 0, 0);
-    }
-  
-    tr:nth-child(odd) {
-      background-color: #dddddd;
-    }
+td, th {
+  border: .5px solid #bdbdbd;
+  text-align: left;
+  padding: 5px;
+}
+
+tr:nth-child(odd) {
+  background-color: #f7d7d7;
+}
+
+td:nth-child(1) {
+  width: 25%;
+}
+
+td:nth-child(2) {
+  width: 25%;
+}
+
+td:nth-child(3) {
+  width: 25%;
+}
+
+td:nth-child(4) {
+  width: 25%;
+}

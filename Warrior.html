@@ -5,25 +5,28 @@
   </head>
 
   <body>
-    <h2>FIT Weight and Balance</h2>
+    <h2>FIT Take Off & Landing Data</h2>
+  
+      <table id="SelectHeader">
+        <tr>
+          <th id="TailnumberH">Tail Number: 
+          </th>
+          <th>
+            <select id="selectAircraft" onchange="selectAircraft()">
+              <option value="">-- Select --</option>   
+            </select>
+          </th>
+        </tr>
+        <tr>
+          <th id="AircraftTypeH">AircraftType: 
+          </th>
+          <th id="aircraftType">
+          </th>
+        </tr>
+      </table>
+  
 
-    <table id="SelectHeader">
-      <tr>
-        <th id="TailnumberH">Tail Number: 
-        </th>
-        <th>
-          <select id="selectAircraft" onchange="selectAircraft()">
-            <option value="">-- Select --</option>   
-          </select>
-        </th>
-      </tr>
-      <tr>
-        <th id="AircraftTypeH">AircraftType: 
-        </th>
-        <th id="aircraftType">
-        </th>
-      </tr>
-    </table>
+    <h3>Weight and Balance</h3>
 
     <table id=WBMain>
       <tr>
@@ -34,17 +37,17 @@
       </tr>
       <tr>
         <td>Basic Empty Weight</td>
-        <td id="BEW"></td>
-        <td id="Arm"></td>
-        <td id="Moment"></td>
+        <td id="BEW" class="NunVal"></td>
+        <td id="Arm" class="NunVal"></td>
+        <td id="Moment" class="NunVal"></td>
       </tr>
       <tr>
         <td>Seats 1+2</td>
         <td id="WSeat12">
           <input type="number" oninput="calculateSeat12(this.value)" placeholder="Weight in lbs" disabled></input>
         </td>
-        <td id="ASeat12"></td>
-        <td id="MSeat12"></td>
+        <td id="ASeat12" class="NunVal"></td>
+        <td id="MSeat12" class="NunVal"></td>
       </tr>
       <tr>
         <td>Seats 3+4</td>
@@ -52,8 +55,8 @@
           <input type="number" oninput="calculateSeat34(this.value)" placeholder="Weight in lbs" disabled></input>
 
         </td>
-        <td id="ASeat34"></td>
-        <td id="MSeat34"></td>
+        <td id="ASeat34" class="NunVal"></td>
+        <td id="MSeat34" class="NunVal"></td>
       </tr>
       <tr>
         <td>Baggage</td>
@@ -61,50 +64,51 @@
           <input type="number" oninput="calculateBaggage(this.value)" placeholder="Weight in lbs" disabled></input>
 
         </td>
-        <td id="ACargo"></td>
-        <td id="MCargo"></tf>
+        <td id="ACargo" class="NunVal"></td>
+        <td id="MCargo" class="NunVal"></tf>
       </tr>
       <tr>
         <td id="FuelQuantity">Fuel</td>
         <td id="WFuel">
           <input type="number" oninput="calculateFuel(this.value)" placeholder="Weight in lbs" disabled></input>
         </td>
-        <td id="AFuel"></td>
-        <td id="MFuel"></td>
+        <td id="AFuel" class="NunVal"></td>
+        <td id="MFuel" class="NunVal"></td>
       </tr>
       <tr>
         <td>Ramp Weight</td>
-        <td id="WRamp"></td>
-        <td id="ARamp"></td>
-        <td id="MRamp"></td>
+        <td id="WRamp" class="NunVal"></td>
+        <td id="ARamp" class="NunVal"></td>
+        <td id="MRamp" class="NunVal"></td>
       </tr>
       <tr>
         <td>Taxi Fuel Burn</td>
         <td id="WFuelTaxi">
           <input type="number" oninput="calculateFuelTaxi(this.value)" placeholder="Weight in lbs" disabled></input>
         </td>
-        <td id="AFuelTaxi"></td>
-        <td id="MFuelTaxi"></td>
+        <td id="AFuelTaxi" class="NunVal"></td>
+        <td id="MFuelTaxi" class="NunVal"></td>
       </tr>  <tr>
         <td>TakeOff Weight</td>
-        <td id="WTakeOff"></td>
-        <td id="ATakeOff"></td>
-        <td id="MTakeOff"></td>
+        <td id="WTakeOff" class="NunVal"></td>
+        <td id="ATakeOff" class="NunVal"></td>
+        <td id="MTakeOff" class="NunVal"></td>
       </tr>  <tr>
         <td>Trip Fuel Burn</td>
         <td id="WFuelTrip">
           <input type="number" oninput="calculateFuelTrip(this.value)" placeholder="Weight in lbs" disabled></input>
         </td>
-        <td id="AFuelTrip"></td>
-        <td id="MFuelTrip"></td>
+        <td id="AFuelTrip" class="NunVal"></td>
+        <td id="MFuelTrip" class="NunVal"></td>
       </tr>  <tr>
         <td>Landing Weight</td>
-        <td id="WLanding"></td>
-        <td id="ALanding"></td>
-        <td id="MLanding"></td>
+        <td id="WLanding" class="NunVal"></td>
+        <td id="ALanding" class="NunVal"></td>
+        <td id="MLanding" class="NunVal"></td>
       </tr>
     </table>
 
+    <h3>Weather Information</h3>
 
     <table id=WeatherData>
       <tr>
@@ -112,30 +116,46 @@
         <th>
           <input type="search" onsearch="getDepWeather(this.value)" placeholder="ICAO"></input>
         </th>
+        <th>Destination Airport</th>
+        <th>
+          <input type="search" onsearch="getArrWeather(this.value)" placeholder="ICAO"></input>
+        </th>
       </tr>
       <tr>
         <td>Zulu Time</td>
         <td id="DWeatherTime"></td>
+        <td>Zulu Time</td>
+        <td id="AWeatherTime"></td>
       </tr>
       <tr>
         <td>Wind</td>
         <td id="DWeatherWind"></td>
+        <td>Wind</td>
+        <td id="AWeatherWind"></td>
       </tr>
       <tr>
         <td>Visibility</td>
         <td id="DWeatherVis"></td>
+        <td>Visibility</td>
+        <td id="AWeatherVis"></td>
       </tr>
       <tr>
         <td>Sky Condition</td>
         <td id="DWeatherSky"></td>
+        <td>Sky Condition</td>
+        <td id="AWeatherSky"></td>
       </tr>
       <tr>
         <td>Temprature</td>
         <td id="DWeatherTemp"></td>
+        <td>Temprature</td>
+        <td id="AWeatherTemp"></td>
       </tr>
       <tr>
         <td>Altimeter</td>
         <td id="DWeatherAlt"></td>
+        <td>Altimeter</td>
+        <td id="AWeatherAlt"></td>
       </tr>
     </table>
   </body>
