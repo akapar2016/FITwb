@@ -19,7 +19,7 @@ let aircraftTypeData = JSON.parse(GetJson(aircrafTypetUrl));
 function selectAircraft () {
     var aircraftId = document.getElementById("selectAircraft").options[document.getElementById("selectAircraft").selectedIndex].value.toString();
     var aircraftData = findAircraftData(aircraftId);
-    var aircraftType = findAircraftType(aircraftData.AircraftType.toString());
+    var aircraftType = findAircraftType(aircraftData.AircraftType);
     document.getElementById("aircraftType").innerHTML = aircraftData.AircraftType;
     loadUpIndValues(aircraftData);
     loadUpInitValues(aircraftType);
