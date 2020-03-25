@@ -108,10 +108,44 @@
       </tr>
     </table>
 
+
+    <table id=WeatherData>
+      <tr>
+        <th>Departure Airport</th>
+        <th>
+          <input type="text" oninput="getDepWeather(this.value)" placeholder="ICAO" disabled></input>
+        </th>
+      </tr>
+      <tr>
+        <td>Zulu Time</td>
+        <td id="DWeatherTime"></td>
+      </tr>
+      <tr>
+        <td>Wind</td>
+        <td id="DWeatherWind"></td>
+      </tr>
+      <tr>
+        <td>Visibility</td>
+        <td id="DWeatherVis"></td>
+      </tr>
+      <tr>
+        <td>Sky Condition</td>
+        <td id="DWeatherSky"></td>
+      </tr>
+      <tr>
+        <td>Temprature</td>
+        <td id="DWeatherTemp"></td>
+      </tr>
+      <tr>
+        <td>Altimeter</td>
+        <td id="DWeatherAlt"></td>
+      </tr>
+    </table>
   </body>
 
 
 
   <script src="SelectAircraft.js"></script>
   <script src="EditValues.js"></script>
+  <script src="Weather.js"></script>
 </html>
