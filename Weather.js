@@ -4,14 +4,15 @@ function getDepWeather(icao) {
     var xhttp = new XMLHttpRequest();
     var xmlParser = new DOMParser();
     var xmlData;
+
+    xhttp.open("GET", url, true);
+    xhttp.setRequestHeader("Access-Control-Allow-Origin", "*");
+    xhttp.setRequestHeader('Content-Type', 'application/xml');
     xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
             xmlData = xmlParser.parseFromString(this.responseText);
         }
     }
-
-    xhttp.open("GET", url, true);
-    xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     xhttp.send();
 
     document.getElementById("DWeatherTime").innerHTML = xmlData;
