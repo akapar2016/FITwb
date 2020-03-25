@@ -1,15 +1,23 @@
-table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-  }
 
-  td, th {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
+h2 {
+  font-size: 200%;
+  text-align: center;
   }
-
-  tr:nth-child(even) {
-    background-color: #0b945f;
-  }
+  table {
+      font-family: Georgia, serif;
+      border-collapse: collapse;
+      width: 75%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    td, th {
+      border: .5px solid #000000;
+      text-align: left;
+      padding: 5px;
+      border-bottom: 1px solid rgb(12, 0, 0);
+    }
+  
+    tr:nth-child(odd) {
+      background-color: #dddddd;
+    }
