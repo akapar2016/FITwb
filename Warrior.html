@@ -68,7 +68,11 @@
         <td id="MCargo" class="NunVal"></tf>
       </tr>
       <tr>
-        <td id="FuelQuantity">Fuel</td>
+        <td id="FuelQuantity">
+          <p> Fuel</p>
+          <input type="number" oninput="calculateFuelVolume(this.value)" placeholder="Fuel quantity in gl." disabled></input>
+
+        </td>
         <td id="WFuel">
           <input type="number" oninput="calculateFuel(this.value)" placeholder="Weight in lbs" disabled></input>
         </td>
@@ -82,7 +86,10 @@
         <td id="MRamp" class="NunVal"></td>
       </tr>
       <tr>
-        <td>Taxi Fuel Burn</td>
+        <td id="FuelQuantityTaxi">
+          <p>Taxi Fuel Burn</p>
+          <input type="number" oninput="calculateFuelTaxi(this.value)" placeholder="Fuel quantity in gl." disabled></input>
+        </td>
         <td id="WFuelTaxi">
           <input type="number" oninput="calculateFuelTaxi(this.value)" placeholder="Weight in lbs" disabled></input>
         </td>
@@ -94,7 +101,10 @@
         <td id="ATakeOff" class="NunVal"></td>
         <td id="MTakeOff" class="NunVal"></td>
       </tr>  <tr>
-        <td>Trip Fuel Burn</td>
+        <td id="FuelQuantityTrip">
+          <p>Trip Fuel Burn</p>
+          <input type="number" oninput="calculateFuelTrip(this.value)" placeholder="Fuel quantity in gl." disabled></input>
+        </td>
         <td id="WFuelTrip">
           <input type="number" oninput="calculateFuelTrip(this.value)" placeholder="Weight in lbs" disabled></input>
         </td>
@@ -157,6 +167,47 @@
         <td>Altimeter</td>
         <td id="AWeatherAlt"></td>
       </tr>
+    </table>
+
+    <h3>Airport Pressure Data</h3>
+
+    <table id=PressureData>
+        <th></th>
+        <th>Departure Airport</th>
+        <th>Arrival Airport</th>
+      <tr>
+        <td>Temprature</td>
+        <td id=DTemp>
+          <input type="number" oninput="DTemprature(this.value)" placeholder="Temprature in celsius" >
+        </input>
+        </td>
+        <td id=Atemp>
+          <input type="number" oninput="ATemprature(this.value)" placeholder="Temprature in celsius" >
+        </input>
+        </td>
+      </tr>
+      <tr>
+        <td>Pressure</td>
+        <td id=Dpress>
+          <input type="number" oninput="DPressure(this.value)" placeholder="Pressure in In-Hg" >
+        </input>
+        </td>
+        <td id=Apress>
+          <input type="number" oninput="APressure(this.value)" placeholder="Pressure in In-Hg" >
+        </input>
+        </td>
+      </tr>
+      <tr>
+        <td>Pressure Altitude</td>
+        <td id=DpressA></td>
+        <td id=ApressA></td>
+      </tr>
+      <tr>
+        <td>Density Altitude</td>
+        <td id=DAlt></td>
+        <td id=AAlt></td>
+      </tr>
+
     </table>
   </body>
 

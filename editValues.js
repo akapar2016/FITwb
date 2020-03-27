@@ -29,7 +29,9 @@ function loadUpInitValues(aircraftType) {
     document.getElementById("AFuel").innerHTML = aircraftType.AFuel;
     document.getElementById("AFuelTaxi").innerHTML = aircraftType.AFuel;
     document.getElementById("AFuelTrip").innerHTML = aircraftType.AFuel;
-    document.getElementById("FuelQuantity").innerHTML = "Fuel - " + aircraftType.FuelQuantity;
+    document.getElementById("FuelQuantity").getElementsByTagName("input")[0].disabled = false;
+    document.getElementById("FuelQuantityTaxi").getElementsByTagName("input")[0].disabled = false;
+    document.getElementById("FuelQuantityTrip").getElementsByTagName("input")[0].disabled = false;
     document.getElementById("WSeat12").getElementsByTagName("input")[0].disabled = false;
     document.getElementById("WSeat34").getElementsByTagName("input")[0].disabled = false;
     document.getElementById("WCargo").getElementsByTagName("input")[0].disabled = false;

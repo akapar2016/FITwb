@@ -32,7 +32,7 @@ select:focus {
   margin-right: auto;
 }
 
-#WBMain, #WeatherData {
+#WBMain, #WeatherData, #PressureData {
   font-family: Georgia, 'Times New Roman';
   border-style: hidden;
   width: 35%;
