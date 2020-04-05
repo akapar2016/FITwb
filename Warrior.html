@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8">
+    <title>FIT Aviation Weight and Balance</title>
+    <meta name="description" content="Florida Tech Weight and balance data">
+    <meta name="author" content="Aayush Kapar">
+    <meta name="author" content="Jing Gong">
+
     <link rel="stylesheet" href="style.css">
   </head>
 
@@ -70,11 +76,11 @@
       <tr>
         <td id="FuelQuantity">
           <p> Fuel</p>
-          <input type="number" oninput="calculateFuelVolume(this.value)" placeholder="Fuel quantity in gl." disabled></input>
+          <input type="number" oninput="calculateFuel(this.parentNode.id, this.value)" placeholder="Fuel quantity in gl." disabled></input>
 
         </td>
         <td id="WFuel">
-          <input type="number" oninput="calculateFuel(this.value)" placeholder="Weight in lbs" disabled></input>
+          <input type="number" oninput="calculateFuel(this.parentNode.id, this.value)" placeholder="Weight in lbs" disabled></input>
         </td>
         <td id="AFuel" class="NunVal"></td>
         <td id="MFuel" class="NunVal"></td>
@@ -88,10 +94,10 @@
       <tr>
         <td id="FuelQuantityTaxi">
           <p>Taxi Fuel Burn</p>
-          <input type="number" oninput="calculateFuelTaxi(this.value)" placeholder="Fuel quantity in gl." disabled></input>
+          <input type="number" oninput="calculateFuelTaxi(this.parentNode.id, this.value)" placeholder="Fuel quantity in gl." disabled></input>
         </td>
         <td id="WFuelTaxi">
-          <input type="number" oninput="calculateFuelTaxi(this.value)" placeholder="Weight in lbs" disabled></input>
+          <input type="number" oninput="calculateFuelTaxi(this.parentNode.id, this.value)" placeholder="Weight in lbs" disabled></input>
         </td>
         <td id="AFuelTaxi" class="NunVal"></td>
         <td id="MFuelTaxi" class="NunVal"></td>
@@ -103,10 +109,10 @@
       </tr>  <tr>
         <td id="FuelQuantityTrip">
           <p>Trip Fuel Burn</p>
-          <input type="number" oninput="calculateFuelTrip(this.value)" placeholder="Fuel quantity in gl." disabled></input>
+          <input type="number" oninput="calculateFuelTrip(this.parentNode.id, this.value)" placeholder="Fuel quantity in gl." disabled></input>
         </td>
         <td id="WFuelTrip">
-          <input type="number" oninput="calculateFuelTrip(this.value)" placeholder="Weight in lbs" disabled></input>
+          <input type="number" oninput="calculateFuelTrip(this.parentNode.id, this.value)" placeholder="Weight in lbs" disabled></input>
         </td>
         <td id="AFuelTrip" class="NunVal"></td>
         <td id="MFuelTrip" class="NunVal"></td>
@@ -214,6 +220,6 @@
 
 
   <script src="SelectAircraft.js"></script>
-  <script src="EditValues.js"></script>
+  <script src="WeightBalance.js"></script>
   <script src="Weather.js"></script>
 </html>
