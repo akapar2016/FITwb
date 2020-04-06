@@ -1,0 +1,37 @@
+select {
+    width: 100px;
+    height: auto;
+    margin: auto;
+}
+select:focus {
+    min-width: 100px;
+    height: auto;
+    width: auto;
+}
+#SelectHeader {
+  border-style: hidden;
+  width: 12.5%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#WBMain, #WeatherData {
+  border-style: hidden;
+  width: 35%;
+  margin-left: auto;
+  margin-right: auto;
+  }
+  
+.calcTable td, .calcTable th {
+  border: .5px solid #bdbdbd;
+  text-align: left;
+  padding: 5px;
+}
+
+.calcTable tr:nth-child(odd) {
+  background-color: #a7d7d9;
+}
+
+.NunVal {
+    text-align: right;
+  }
