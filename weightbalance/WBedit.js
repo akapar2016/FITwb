@@ -63,24 +63,32 @@ function clearValues() {
 }
 
 function calculateSeat12(input) {
+    console.log("calculateSeat12");
+    
     document.getElementById("MSeat12").innerHTML = 
             (document.getElementById("ASeat12").innerText * input).toFixed(1);
     calculateTotals();
 }
 
 function calculateSeat34(input) {
+    console.log("calculateSeat34");
+    
     document.getElementById("MSeat34").innerHTML = 
             (document.getElementById("ASeat34").innerText * input).toFixed(1);
     calculateTotals();
 }
 
 function calculateBaggage(input) {
+    console.log("calculateBaggage");
+    
     document.getElementById("MCargo").innerHTML = 
             (document.getElementById("ACargo").innerText * input).toFixed(1);
     calculateTotals();
 }
 
 function calculateFuel(parentId, input) {
+    console.log("calculateFuel");
+
     if (parentId.charAt(0) == "W") {
         document.getElementById("MFuel").innerHTML = 
             (document.getElementById("AFuel").innerText * input).toFixed(1);
@@ -94,6 +102,8 @@ function calculateFuel(parentId, input) {
 }
 
 function calculateFuelTaxi(parentId, input) {
+    console.log("calculateFuelTaxi");
+
     if (parentId.charAt(0) == "W") {
         document.getElementById("MFuelTaxi").innerHTML = 
             (document.getElementById("AFuelTaxi").innerText * input).toFixed(1);
@@ -107,6 +117,8 @@ function calculateFuelTaxi(parentId, input) {
 }
 
 function calculateFuelTrip(parentId, input) {
+    console.log("calculateFuelTrip");
+
     if (parentId.charAt(0) == "W") {
         document.getElementById("MFuelTrip").innerHTML = 
             (document.getElementById("AFuelTrip").innerText * input).toFixed(1);
@@ -120,6 +132,8 @@ function calculateFuelTrip(parentId, input) {
 }
 
 function calculateTotals() {
+    console.log("calculateTotals");
+
     document.getElementById("WRamp").innerHTML = 
             (parseFloat(document.getElementById("BEW").innerText) +
             parseFloat(document.getElementById("WSeat12").getElementsByTagName("input")[0].value) +
@@ -177,7 +191,13 @@ function calculateTotals() {
     document.getElementById("ALanding").innerHTML = 
             (parseFloat(document.getElementById("MLanding").innerHTML) / 
             parseFloat(document.getElementById("WLanding").innerHTML)).toFixed(1);
-    if (document.getElementById("ALanding").innerHTML == "NaN")
-        document.getElementById("ALanding").innerHTML = "--"; 
+            
+    if (document.getElementById("ALanding").innerHTML == "NaN") {
+        document.getElementById("ALanding").innerHTML = "--";                     
+    } else {
+        console.log("CreateGraph - calculateTotals");
+        graphPoint("Takeoff", parseFloat(document.getElementById("ALanding").innerHTML),
+                              parseFloat(document.getElementById("WLanding").innerHTML));
+    }
 
 }

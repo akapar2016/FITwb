@@ -12,14 +12,17 @@ function GetJson(yourUrl) {
  */
 let allAircraftData = JSON.parse(GetJson(aircraftIdUrl));
 let aircraftTypeData = JSON.parse(GetJson(aircrafTypetUrl));
-
+let aircraftData;
+let aircraftType;
 /**
  * Identify Aircraft from dropdown
  */
 function selectAircraft () {
+    console.log("selectAircraft");
+
     var aircraftId = document.getElementById("selectAircraft").options[document.getElementById("selectAircraft").selectedIndex].value.toString();
-    var aircraftData = findAircraftData(aircraftId);
-    var aircraftType = findAircraftType(aircraftData.AircraftType);
+    aircraftData = findAircraftData(aircraftId);
+    aircraftType = findAircraftType(aircraftData.AircraftType);
     document.getElementById("aircraftType").innerHTML = aircraftData.AircraftType;
     loadUpIndValues(aircraftData);
     loadUpInitValues(aircraftType);

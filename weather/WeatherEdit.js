@@ -1,5 +1,7 @@
 
 function editDepWeatherValues(value) {
+    console.log("editDepWeatherValues");
+
     value = value.getElementsByTagName("METAR")[0];
     document.getElementById("DWeatherTime").innerHTML = 
         value.getElementsByTagName("observation_time")[0].childNodes[0].nodeValue;
@@ -43,6 +45,8 @@ function editDepWeatherValues(value) {
 }
 
 function weatherDepOnEditChange() {
+    console.log("weatherDepOnEditChange");
+
     document.getElementById("DWeatherTempDif").innerHTML = 
         (parseFloat(document.getElementById("DWeatherTemp").getElementsByTagName("input")[0].value) - 
         parseFloat(document.getElementById("DWeatherDew").getElementsByTagName("input")[0].value)).toFixed(1);
@@ -59,6 +63,8 @@ function weatherDepOnEditChange() {
 }
 
 function editArWeatherValues(value) {
+    console.log("editArWeatherValues");
+
     document.getElementById("AWeatherTime").innerHTML = 
         value.getElementsByTagName("observation_time")[0].childNodes[0].nodeValue;
 
@@ -101,6 +107,8 @@ function editArWeatherValues(value) {
 }
 
 function weatherArrOnEditChange() {
+    console.log("weatherArrOnEditChange");
+
     document.getElementById("AWeatherTempDif").innerHTML = 
         (parseFloat(document.getElementById("AWeatherTemp").getElementsByTagName("input")[0].value) - 
         parseFloat(document.getElementById("AWeatherDew").getElementsByTagName("input")[0].value)).toFixed(1);
