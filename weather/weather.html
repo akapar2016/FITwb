@@ -35,16 +35,30 @@
     <td id="AWeatherSky"></td>
   </tr>
   <tr>
+    <td>Weather Disp</td>
+    <td id="DWeatherDisp"></td>
+    <td>Weather Disp</td>
+    <td id="AWeatherDisp"></td>
+  </tr>
+  <tr>
     <td>Temprature</td>
-    <td id="DWeatherTemp"></td>
+    <td id="DWeatherTemp">
+        <input type="number" oninput="weatherDepOnEditChange()" placeholder="In C"></input>
+    </td>
     <td>Temprature</td>
-    <td id="AWeatherTemp"></td>
+    <td id="AWeatherTemp">
+        <input type="number" oninput="weatherArrOnEditChange()" placeholder="In C"></input>
+    </td>
   </tr>
   <tr>
     <td>Dew Point</td>
-    <td id="DWeatherDew"></td>
+    <td id="DWeatherDew">
+        <input type="number" oninput="weatherDepOnEditChange()" placeholder="In C"></input>
+    </td>
     <td>Dew Point</td>
-    <td id="AWeatherDew"></td>
+    <td id="AWeatherDew">
+        <input type="number" oninput="weatherArrOnEditChange()" placeholder="In C"></input>
+    </td>
   </tr>
   <tr>
     <td>Temp Diff</td>
@@ -54,15 +68,23 @@
   </tr>
   <tr>
     <td>Altimeter</td>
-    <td id="DWeatherAlt"></td>
+    <td id="DWeatherAlt">
+        <input type="number" oninput="weatherDepOnEditChange()" placeholder="In Hg"></input>
+    </td>
     <td>Altimeter</td>
-    <td id="AWeatherAlt"></td>
+    <td id="AWeatherAlt">
+        <input type="number" oninput="weatherArrOnEditChange()" placeholder="In Hg"></input>
+    </td>
   </tr>
   <tr>
     <td>Elevation</td>
-    <td id="Delevation"></td>
+    <td id="Delevation">
+        <input type="number" oninput="weatherDepOnEditChange()" placeholder="In Ft"></input>
+    </td>
     <td>Elevation</td>
-    <td id="Aelevation"></td>
+    <td id="Aelevation">
+        <input type="number" oninput="weatherArrOnEditChange()" placeholder="In Ft"></input>
+    </td>
   </tr>
   <tr>
     <td>Raw Metar</td>
