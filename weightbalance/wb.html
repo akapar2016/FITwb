@@ -1,0 +1,117 @@
+  
+      <table id="SelectHeader">
+        <tr>
+          <th id="TailnumberH">Tail Number: 
+          </th>
+          <th>
+            <select id="selectAircraft" onchange="selectAircraft()">
+              <option value="">-- Select --</option>   
+            </select>
+          </th>
+        </tr>
+        <tr>
+          <th id="AircraftTypeH">AircraftType: 
+          </th>
+          <th id="aircraftType">
+          </th>
+        </tr>
+      </table>
+  
+
+    <h3>Weight and Balance</h3>
+
+    <table id=WBMain>
+      <tr>
+        <th>Item</th>
+        <th>Weight</th>
+        <th>Arm</th>
+        <th>Moment</th>
+      </tr>
+      <tr>
+        <td>Basic Empty Weight</td>
+        <td id="BEW" class="NunVal"></td>
+        <td id="Arm" class="NunVal"></td>
+        <td id="Moment" class="NunVal"></td>
+      </tr>
+      <tr>
+        <td>Seats 1+2</td>
+        <td id="WSeat12">
+          <input type="number" oninput="calculateSeat12(this.value)" placeholder="Weight in lbs" disabled></input>
+        </td>
+        <td id="ASeat12" class="NunVal"></td>
+        <td id="MSeat12" class="NunVal"></td>
+      </tr>
+      <tr>
+        <td>Seats 3+4</td>
+        <td id="WSeat34">
+          <input type="number" oninput="calculateSeat34(this.value)" placeholder="Weight in lbs" disabled></input>
+
+        </td>
+        <td id="ASeat34" class="NunVal"></td>
+        <td id="MSeat34" class="NunVal"></td>
+      </tr>
+      <tr>
+        <td>Baggage</td>
+        <td id="WCargo">
+          <input type="number" oninput="calculateBaggage(this.value)" placeholder="Weight in lbs" disabled></input>
+
+        </td>
+        <td id="ACargo" class="NunVal"></td>
+        <td id="MCargo" class="NunVal"></tf>
+      </tr>
+      <tr>
+        <td id="FuelQuantity">
+          <p> Fuel</p>
+          <input type="number" oninput="calculateFuel(this.parentNode.id, this.value)" placeholder="Fuel quantity in gl." disabled></input>
+
+        </td>
+        <td id="WFuel">
+          <input type="number" oninput="calculateFuel(this.parentNode.id, this.value)" placeholder="Weight in lbs" disabled></input>
+        </td>
+        <td id="AFuel" class="NunVal"></td>
+        <td id="MFuel" class="NunVal"></td>
+      </tr>
+      <tr>
+        <td>Ramp Weight</td>
+        <td id="WRamp" class="NunVal"></td>
+        <td id="ARamp" class="NunVal"></td>
+        <td id="MRamp" class="NunVal"></td>
+      </tr>
+      <tr>
+        <td id="FuelQuantityTaxi">
+          <p>Taxi Fuel Burn</p>
+          <input type="number" oninput="calculateFuelTaxi(this.parentNode.id, this.value)" placeholder="Fuel quantity in gl." disabled></input>
+        </td>
+        <td id="WFuelTaxi">
+          <input type="number" oninput="calculateFuelTaxi(this.parentNode.id, this.value)" placeholder="Weight in lbs" disabled></input>
+        </td>
+        <td id="AFuelTaxi" class="NunVal"></td>
+        <td id="MFuelTaxi" class="NunVal"></td>
+      </tr>
+      <tr>
+        <td>TakeOff Weight</td>
+        <td id="WTakeOff" class="NunVal"></td>
+        <td id="ATakeOff" class="NunVal"></td>
+        <td id="MTakeOff" class="NunVal"></td>
+      </tr>
+      <tr>
+        <td id="FuelQuantityTrip">
+          <p>Trip Fuel Burn</p>
+          <input type="number" oninput="calculateFuelTrip(this.parentNode.id, this.value)" placeholder="Fuel quantity in gl." disabled></input>
+        </td>
+        <td id="WFuelTrip">
+          <input type="number" oninput="calculateFuelTrip(this.parentNode.id, this.value)" placeholder="Weight in lbs" disabled></input>
+        </td>
+        <td id="AFuelTrip" class="NunVal"></td>
+        <td id="MFuelTrip" class="NunVal"></td>
+      </tr>
+      <tr>
+        <td>Landing Weight</td>
+        <td id="WLanding" class="NunVal"></td>
+        <td id="ALanding" class="NunVal"></td>
+        <td id="MLanding" class="NunVal"></td>
+      </tr>
+    </table>
+
+    <script src="weightbalance/SelectAircraft.js"></script>
+    <script src="weightbalance/WBedit.js"></script>

@@ -1,0 +1,89 @@
+<h3>Weather Information</h3>
+<table id=WeatherData>
+  <tr>
+    <th>Departure Airport</th>
+    <th>
+      <input type="search" onsearch="getWeather(this.value, true)" placeholder="ICAO"></input>
+    </th>
+    <th>Destination Airport</th>
+    <th>
+      <input type="search" onsearch="getWeather(this.value, false)" placeholder="ICAO"></input>
+    </th>
+  </tr>
+  <tr>
+    <td>Zulu Time</td>
+    <td id="DWeatherTime"></td>
+    <td>Zulu Time</td>
+    <td id="AWeatherTime"></td>
+  </tr>
+  <tr>
+    <td>Wind</td>
+    <td id="DWeatherWind"></td>
+    <td>Wind</td>
+    <td id="AWeatherWind"></td>
+  </tr>
+  <tr>
+    <td>Visibility</td>
+    <td id="DWeatherVis"></td>
+    <td>Visibility</td>
+    <td id="AWeatherVis"></td>
+  </tr>
+  <tr>
+    <td>Sky Condition</td>
+    <td id="DWeatherSky"></td>
+    <td>Sky Condition</td>
+    <td id="AWeatherSky"></td>
+  </tr>
+  <tr>
+    <td>Temprature</td>
+    <td id="DWeatherTemp"></td>
+    <td>Temprature</td>
+    <td id="AWeatherTemp"></td>
+  </tr>
+  <tr>
+    <td>Dew Point</td>
+    <td id="DWeatherDew"></td>
+    <td>Dew Point</td>
+    <td id="AWeatherDew"></td>
+  </tr>
+  <tr>
+    <td>Temp Diff</td>
+    <td id="DWeatherTempDif"></td>
+    <td>Temp Diff</td>
+    <td id="AWeatherTempDif"></td>
+  </tr>
+  <tr>
+    <td>Altimeter</td>
+    <td id="DWeatherAlt"></td>
+    <td>Altimeter</td>
+    <td id="AWeatherAlt"></td>
+  </tr>
+  <tr>
+    <td>Elevation</td>
+    <td id="Delevation"></td>
+    <td>Elevation</td>
+    <td id="Aelevation"></td>
+  </tr>
+  <tr>
+    <td>Raw Metar</td>
+    <td id="DWeatherRaw"></td>
+    <td>Raw Metar</td>
+    <td id="AWeatherRaw"></td>
+  </tr>
+  <tr>
+    <td>Pressure Altitude</td>
+    <td id=DpressA></td>
+    <td>Pressure Altitude</td>
+    <td id=ApressA></td>
+  </tr>
+  <tr>
+    <td>Density Altitude</td>
+    <td id=DdAlt></td>
+    <td>Density Altitude</td>
+    <td id=AdAlt></td>
+  </tr>
+</table>
+
+
+<script src="weather/GetWeather.js"></script>
+<script src="weather/WeatherEdit.js"></script>
