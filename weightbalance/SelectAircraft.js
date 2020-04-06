@@ -24,8 +24,9 @@ function selectAircraft () {
     aircraftData = findAircraftData(aircraftId);
     aircraftType = findAircraftType(aircraftData.AircraftType);
     document.getElementById("aircraftType").innerHTML = aircraftData.AircraftType;
-    loadUpIndValues(aircraftData);
-    loadUpInitValues(aircraftType);
+    loadUpIndValues();
+    loadUpInitValues();
+    createAircraftLayout();
     calculateTotals();
 }
 
