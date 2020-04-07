@@ -1,8 +1,4 @@
-select {
-    width: 100px;
-    height: auto;
-    margin: auto;
-}
+
 select:focus {
     min-width: 100px;
     height: auto;
@@ -13,9 +9,11 @@ select:focus {
   width: 12.5%;
   margin-left: auto;
   margin-right: auto;
+  height: auto;
+  margin: auto;
 }
 
-#WBMain, #WeatherData {
+#WBMain {
   border-style: hidden;
   width: 35%;
   margin-left: auto;
