@@ -4,6 +4,7 @@
         type: 'scatter',
         data: 0,
         options: {
+            maintainAspectRatio: false,
             scales: {
                 xAxes: [{
                     ticks: {
