@@ -1,0 +1,29 @@
+table.weather {
+    width: 45%;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+}
+
+table.weather tr {
+    border-bottom: solid;
+    border-width: 1.5px;
+    min-width: 10%;
+}
+
+table.weather tr:last-child {
+    border-width: 0px;
+}
+
+table.weather th {
+    padding: 5px;
+}
+
+table.weather input {
+    background-color: #ffffff;
+    height:inherit; 
+}
+
+table.weather input:focus {
+  border: 3px solid #770000;
+}

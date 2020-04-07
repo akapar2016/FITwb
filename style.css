@@ -14,8 +14,24 @@ h1, h2, h3, h4, h5, h6, p, ul, form, table, select, input{
 body {
     background-color: #FFFFFF;
     position: relative;
+    margin: auto;
+}
+
+p {
+    padding: 30px;
 }
 
 .sectionHead {
     text-align: center;
+}
+
+
+.sectionDiv {
+    border: 2px solid #AB946C;
+    margin: 0px;
+}
+
+.graysection {
+    background-color: #9DA0A0;
+    margin: 0px;
 }

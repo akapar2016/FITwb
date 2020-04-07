@@ -1,106 +1,105 @@
-<table id=WeatherData>
+<link rel="stylesheet" href="weather/style.css">  
+
+
+<table id=WeatherData class="weather">
   <tr>
-    <th>Departure Airport</th>
     <th>
-      <input type="search" onsearch="getWeather(this.value, true)" placeholder="ICAO"></input>
+
     </th>
-    <th>Destination Airport</th>
     <th>
-      <input type="search" onsearch="getWeather(this.value, false)" placeholder="ICAO"></input>
+      Departure Airport
+    </th>
+    <th>
+      Destination Airport
     </th>
   </tr>
+    <th>ICAO</th>
+    <td>
+      <input type="search" onsearch="getWeather(this.value, true)" placeholder="ICAO"></input>
+    </td>
+    <td>
+      <input type="search" onsearch="getWeather(this.value, false)" placeholder="ICAO"></input>
+    </td>
+  </tr>
   <tr>
-    <td>Zulu Time</td>
+    <th>Zulu Time</th>
     <td id="DWeatherTime"></td>
-    <td>Zulu Time</td>
     <td id="AWeatherTime"></td>
   </tr>
   <tr>
-    <td>Wind</td>
+    <th>Wind</th>
     <td id="DWeatherWind"></td>
-    <td>Wind</td>
     <td id="AWeatherWind"></td>
   </tr>
   <tr>
-    <td>Visibility</td>
+    <th>Visibility</th>
     <td id="DWeatherVis"></td>
-    <td>Visibility</td>
     <td id="AWeatherVis"></td>
   </tr>
   <tr>
-    <td>Sky Condition</td>
+    <th>Sky Condition</th>
     <td id="DWeatherSky"></td>
-    <td>Sky Condition</td>
     <td id="AWeatherSky"></td>
   </tr>
   <tr>
-    <td>Weather Disp</td>
+    <th>Weather Disp</th>
     <td id="DWeatherDisp"></td>
-    <td>Weather Disp</td>
     <td id="AWeatherDisp"></td>
   </tr>
   <tr>
-    <td>Temprature</td>
+    <th>Temprature</th>
     <td id="DWeatherTemp">
         <input type="number" oninput="weatherDepOnEditChange()" placeholder="In C"></input>
     </td>
-    <td>Temprature</td>
     <td id="AWeatherTemp">
         <input type="number" oninput="weatherArrOnEditChange()" placeholder="In C"></input>
     </td>
   </tr>
   <tr>
-    <td>Dew Point</td>
+    <th>Dew Point</th>
     <td id="DWeatherDew">
         <input type="number" oninput="weatherDepOnEditChange()" placeholder="In C"></input>
     </td>
-    <td>Dew Point</td>
     <td id="AWeatherDew">
         <input type="number" oninput="weatherArrOnEditChange()" placeholder="In C"></input>
     </td>
   </tr>
   <tr>
-    <td>Temp Diff</td>
+    <th>Temp Diff</th>
     <td id="DWeatherTempDif"></td>
-    <td>Temp Diff</td>
     <td id="AWeatherTempDif"></td>
   </tr>
   <tr>
-    <td>Altimeter</td>
+    <th>Altimeter</th>
     <td id="DWeatherAlt">
         <input type="number" oninput="weatherDepOnEditChange()" placeholder="In Hg"></input>
     </td>
-    <td>Altimeter</td>
     <td id="AWeatherAlt">
         <input type="number" oninput="weatherArrOnEditChange()" placeholder="In Hg"></input>
     </td>
   </tr>
   <tr>
-    <td>Elevation</td>
+    <th>Elevation</th>
     <td id="Delevation">
         <input type="number" oninput="weatherDepOnEditChange()" placeholder="In Ft"></input>
     </td>
-    <td>Elevation</td>
     <td id="Aelevation">
         <input type="number" oninput="weatherArrOnEditChange()" placeholder="In Ft"></input>
     </td>
   </tr>
   <tr>
-    <td>Raw Metar</td>
+    <th>Raw Metar</th>
     <td id="DWeatherRaw"></td>
-    <td>Raw Metar</td>
     <td id="AWeatherRaw"></td>
   </tr>
   <tr>
-    <td>Pressure Altitude</td>
+    <th>Pressure Altitude</th>
     <td id=DpressA></td>
-    <td>Pressure Altitude</td>
     <td id=ApressA></td>
   </tr>
   <tr>
-    <td>Density Altitude</td>
+    <th>Density Altitude</th>
     <td id=DdAlt></td>
-    <td>Density Altitude</td>
     <td id=AdAlt></td>
   </tr>
 </table>
