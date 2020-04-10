@@ -31,7 +31,11 @@
     "G4x": 93,
     "G4y": 2440,
     "Gbackx": 93,
-    "Gbacky": 1200
+    "Gbacky": 1200,
+    "GstartUtilx": "",
+    "GstartUtily": "",
+    "GendUtilx": "",
+    "GendUtily": ""
   },
   {
     "AircraftType": "Warrior3",
@@ -65,7 +69,11 @@
     "G4x": 93,
     "G4y": 2440,
     "Gbackx": 93,
-    "Gbacky": 1200
+    "Gbacky": 1200,
+    "GstartUtilx": "",
+    "GstartUtily": "",
+    "GendUtilx": "",
+    "GendUtily": ""
   },
   {
     "AircraftType": "Archer",
@@ -99,7 +107,11 @@
     "G4x": 93,
     "G4y": 2550,
     "Gbackx": 93,
-    "Gbacky": 1200
+    "Gbacky": 1200,
+    "GstartUtilx": "",
+    "GstartUtily": "",
+    "GendUtilx": "",
+    "GendUtily": ""
   },
   {
     "AircraftType": "Seminole",
@@ -133,6 +145,48 @@
     "G4x": 93,
     "G4y": 3800,
     "Gbackx": 93,
-    "Gbacky": 2300
+    "Gbacky": 2300,
+    "GstartUtilx": "",
+    "GstartUtily": "",
+    "GendUtilx": "",
+    "GendUtily": ""
+  },
+  {
+    "AircraftType": "Citabria",
+    "ASeat12": 11.5,
+    "ASeat34": 42,
+    "ACargo": 69,
+    "AFuel": 24.5,
+    "FuelQuantity": 35,
+    "MaxWeight": 1750,
+    "VaMinWeight": "",
+    "VaMaxWeight": "",
+    "VaMinSpeed": "",
+    "VaMaxSpeed": "",
+    "Vr": "",
+    "Vx": "",
+    "Vy": "",
+    "VcruiseClimb": "",
+    "Vref": "",
+    "Vglide": "",
+    "F55": "",
+    "F65": "",
+    "F75": "",
+    "Gfrontx": 14,
+    "Gfronty": 1325,
+    "G1x": 25,
+    "G1y": 1750,
+    "G2x": 33.5,
+    "G2y": 1750,
+    "G3x": 33.5,
+    "G3y": 1750,
+    "G4x": 33.5,
+    "G4y": 1750,
+    "Gbackx": 24,
+    "Gbacky": 1325,
+    "GstartUtilx": 21.5,
+    "GstartUtily": 1325,
+    "GendUtilx": 28.5,
+    "GendUtily": 1750
   }
 ]
