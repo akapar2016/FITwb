@@ -1,35 +1,61 @@
-
+table.calcTable{
+  
+}
 select:focus {
-    min-width: 100px;
-    height: auto;
-    width: auto;
+  min-width: 100px;
+  height: auto;
+  width: auto;
 }
 #SelectHeader {
-  border-style: hidden;
-  width: 12.5%;
-  margin-left: auto;
-  margin-right: auto;
-  height: auto;
-  margin: auto;
+border-style: hidden;
+width: 12.5%;
+margin-left: auto;
+margin-right: auto;
+height: auto;
+margin: auto;
 }
 
 #WBMain {
-  border-style: hidden;
-  width: 35%;
-  margin-left: auto;
-  margin-right: auto;
-  }
-  
-.calcTable td, .calcTable th {
-  border: .5px solid #bdbdbd;
-  text-align: left;
-  padding: 5px;
+border-collapse: collapse;
+width: 45%;
+margin-left: auto;
+margin-right: auto;
 }
 
+.calcTable td, .calcTable th {
+border-bottom: 1.5px solid;
+padding: 5px;
+}
+
+
 .calcTable tr:nth-child(odd) {
-  background-color: #a7d7d9;
+background-color: #a7d7d9;
 }
 
 .NunVal {
-    text-align: right;
-  }
+  text-align: right;
+}
+
+.calcTable td:nth-child(1){
+width: 30%;
+}
+
+.calcTable td:nth-child(2){
+text-align: center;
+width:10%;
+}
+
+.calcTable td:nth-child(3){
+text-align: center;
+width: 25%;
+}
+
+.calcTable td:nth-child(4){
+width:25%;
+}
+.chartContainer {
+  height: 40vh;
+  width: 40vw;
+  margin-left: auto;
+  margin-right: auto;
+}

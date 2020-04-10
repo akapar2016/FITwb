@@ -43,7 +43,6 @@
     <td>Seats 3+4</td>
     <td id="WSeat34">
       <input type="number" oninput="calculateSeat34(this.value)" placeholder="Weight in lbs" disabled></input>
-
     </td>
     <td id="ASeat34" class="NunVal"></td>
     <td id="MSeat34" class="NunVal"></td>
@@ -59,7 +58,7 @@
   </tr>
   <tr>
     <td id="FuelQuantity">
-      <p> Fuel</p>
+      Fuel<br>
       <input type="number" oninput="calculateFuel(this.parentNode.id, this.value)" placeholder="Fuel quantity in gl." disabled></input>
 
     </td>
@@ -77,7 +76,7 @@
   </tr>
   <tr>
     <td id="FuelQuantityTaxi">
-      <p>Taxi Fuel Burn</p>
+    Taxi Fuel Burn<br>
       <input type="number" oninput="calculateFuelTaxi(this.parentNode.id, this.value)" placeholder="Fuel quantity in gl." disabled></input>
     </td>
     <td id="WFuelTaxi">
@@ -94,8 +93,8 @@
   </tr>
   <tr>
     <td id="FuelQuantityTrip">
-      <p>Trip Fuel Burn</p>
-      <input type="number" oninput="calculateFuelTrip(this.parentNode.id, this.value)" placeholder="Fuel quantity in gl." disabled></input>
+      Trip Fuel Burn<br>
+      <input type="number"  oninput="calculateFuelTrip(this.parentNode.id, this.value)" placeholder="Fuel quantity in gl." disabled></input>
     </td>
     <td id="WFuelTrip">
       <input type="number" oninput="calculateFuelTrip(this.parentNode.id, this.value)" placeholder="Weight in lbs" disabled></input>
