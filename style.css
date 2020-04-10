@@ -31,7 +31,11 @@ body {
     margin: 0px;
 }
 
-.graysection {
+.lightgraysection {
     background-color: #d5d0c9;
+    margin: 0px;
+}
+.graysection {
+    background-color: #9da0a0;
     margin: 0px;
 }

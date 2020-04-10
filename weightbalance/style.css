@@ -20,15 +20,31 @@ margin-left: auto;
 margin-right: auto;
 }
 
-.calcTable td, .calcTable th {
-border-bottom: 1.5px solid;
-padding: 5px;
+.calcTable tr {
+  border-bottom: solid;
+  border-width: 1.5px;
+  height: 50px;
 }
 
+.wbdiv {
+  height: 0px !important ;
+}
+
+.wbfuel {
+  border-width: 3px !important;
+}
+
+.calcTable td, .calcTable th {
+  padding: 5px;
+}
 
 .calcTable tr:nth-child(odd) {
-background-color: #d5d0c9;
+background-color: #e6e6e6;
 }
+
+.calcTable tr:last-child {
+  border-width: 0px;
+  }
 
 .NunVal {
   text-align: right;
