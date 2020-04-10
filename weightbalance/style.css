@@ -1,6 +1,4 @@
-table.calcTable{
-  
-}
+
 select:focus {
   min-width: 100px;
   height: auto;
@@ -17,7 +15,7 @@ margin: auto;
 
 #WBMain {
 border-collapse: collapse;
-width: 45%;
+width: 35%;
 margin-left: auto;
 margin-right: auto;
 }
@@ -29,7 +27,7 @@ padding: 5px;
 
 
 .calcTable tr:nth-child(odd) {
-background-color: #a7d7d9;
+background-color: #d5d0c9;
 }
 
 .NunVal {
