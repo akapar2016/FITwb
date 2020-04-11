@@ -15,6 +15,7 @@ function loadUpIndValues() {
     document.getElementById("BEW").innerHTML = aircraftData.BEW;
     document.getElementById("Arm").innerHTML = aircraftData.Arm;
     document.getElementById("Moment").innerHTML = aircraftData.Moment;
+
 }
 
 /**
@@ -38,6 +39,17 @@ function loadUpInitValues() {
     document.getElementById("WFuelTrip").getElementsByTagName("input")[0].disabled = false;
 
 
+    if (aircraftType.AircraftType == "Seminole") {
+        var x = document.getElementsByClassName("seminoleOnly");
+        for (var i = 0; i < x.length; i++) {
+            x[i].style.display = 'table';
+        }
+    } else {
+        var x = document.getElementsByClassName("seminoleOnly");
+        for (var i = 0; i < x.length; i++) {
+            x[i].style.display = 'none';
+        }
+    }
 }
 
 

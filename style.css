@@ -21,6 +21,7 @@ body {
     padding: 30px;
 }
 
+/*Section Full Scale*/
 .sectionHead {
     text-align: center;
 }
@@ -31,11 +32,58 @@ body {
     margin: 0px;
 }
 
-.lightgraysection {
+section.lightgraysection {
     background-color: #d5d0c9;
     margin: 0px;
 }
-.graysection {
+section.graysection {
     background-color: #9da0a0;
     margin: 0px;
 }
+/*END - Section Full Scale*/
+
+/*All main tables used in website*/
+table.sectTable {
+    width: 70vw;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+}
+
+table.sectTable tr {
+    border-bottom: solid;
+    border-width: 1.5px;
+    min-width: 10%;
+    padding: 500px;
+}
+
+table.sectTable tr:last-child {
+    border-width: 0px;
+}
+
+table.sectTable th, table.sectTable td{
+    padding: 5px;
+}
+
+table.sectTable th{
+    text-align: center;
+}
+
+table.sectTable td{
+    text-align: center;
+}
+/*END - All main tables used in website*/
+
+/*All input values*/
+input:focus, select:focus{
+    border: 3px solid #770000;
+}
+
+select, input {
+    min-width: 100px;
+    height: auto;
+    width: 100px;
+    border: 3px solid #a5a5a5;
+  }
+/*END - All input values*/
+

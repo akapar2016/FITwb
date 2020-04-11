@@ -1,75 +1,42 @@
 
-select:focus {
-  min-width: 100px;
-  height: auto;
-  width: auto;
-}
-#SelectHeader {
-border-style: hidden;
-width: 12.5%;
-margin-left: auto;
-margin-right: auto;
-height: auto;
-margin: auto;
-}
 
-#WBMain {
-border-collapse: collapse;
-width: 35%;
-margin-left: auto;
-margin-right: auto;
-}
-
-.calcTable tr {
-  border-bottom: solid;
-  border-width: 1.5px;
-  height: 50px;
-}
-
-.wbdiv {
-  height: 0px !important ;
-}
-
-.wbfuel {
-  border-width: 3px !important;
-}
-
-.calcTable td, .calcTable th {
-  padding: 5px;
-}
-
-.calcTable tr:nth-child(odd) {
-background-color: #e6e6e6;
-}
-
-.calcTable tr:last-child {
-  border-width: 0px;
-  }
-
-.NunVal {
-  text-align: right;
-}
-
-.calcTable td:nth-child(1){
-width: 30%;
-}
-
-.calcTable td:nth-child(2){
-text-align: center;
-width:10%;
-}
-
-.calcTable td:nth-child(3){
-text-align: center;
-width: 25%;
-}
-
-.calcTable td:nth-child(4){
-width:25%;
-}
-.chartContainer {
-  height: 40vh;
-  width: 40vw;
+#selectTable {
+  border-style: hidden;
+  width: 12.5%;
   margin-left: auto;
   margin-right: auto;
-}
+  height: auto;
+  margin: auto;
+  }
+  
+  .wbinvisRow {
+    height: 0px !important ;
+  }
+  
+  .wbTableBold {
+    border-width: 3px !important;
+  }
+  
+  #wbTable tr:nth-child(odd) {
+  background-color: #e6e6e6;
+  }
+  
+  #wbTable th:nth-child(1){
+  width:initial;
+  }
+  #wbTable td:nth-child(2){
+  width:30%;
+  }
+  #wbTable td:nth-child(3){
+  width:15%;
+  }
+  #wbTable td:nth-child(4){
+  width:30%;
+  }
+  
+  .chartContainer {
+    height: 50vh;
+    width: 70vw;
+    margin-left: auto;
+    margin-right: auto;
+  }

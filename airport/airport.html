@@ -1,0 +1,96 @@
+<link rel="stylesheet" href="airport/style.css">  
+
+
+<table id=airportTable class="sectTable">
+  <tr>
+    <th>
+
+    </th>
+    <th>
+      Departure Airport
+    </th>
+    <th>
+      Destination Airport
+    </th>
+  <tr>
+    <th>Runways</th>
+    <td id="Drunway">
+      <input type="number" oninput="calcDepRunway(this.value)" placeholder="Number"></input>
+    </td>
+    <td id="Arunway">
+      <input type="number" oninput="calcDepRunway(this.value)" placeholder="Number"></input>
+    </td>
+  </tr>
+  <tr>
+    <th>Wind</th>
+    <td id="Dwind">
+      <input type="number" oninput="calcDepRunway(this.parent)" placeholder="heading"></input>
+      <input type="number" oninput="calcDepRunway(this.parent)" placeholder="kts"></input>
+    </td>
+    <td id="Awind">
+      <input type="number" oninput="calcDepRunway(this.parent)" placeholder="heading"></input>
+      <input type="number" oninput="calcDepRunway(this.parent)" placeholder="kts"></input>
+    </td>
+  </tr>
+  <tr>
+    <th>Crosswind</th>
+    <td id="Dxwind"></td>
+    <td id="Axwind"></td>
+  </tr>
+  <tr>
+    <th>Headwind</th>
+    <td id="Dheadwind"></td>
+    <td id="Aheadwind"></td>
+  </tr>
+  <tr>
+    <th>TO Groundroll</th>
+    <td id="Dtogroundroll"></td>
+    <td id="Atogroundroll"></td>
+  </tr>
+  <tr>
+    <th>TD 50ft Distance</th>
+    <td id="D50todistance"></td>
+    <td id="A50todistance"></td>
+  </tr>
+  <tr class="seminoleOnly">
+    <th>Acc Stop</th>
+    <td id="Dldgroundroll"></td>
+    <td id="Aldgroundroll"></td>
+  </tr>
+  <tr class="seminoleOnly">
+    <th>ME Climb</th>
+    <td id="Dldgroundroll"></td>
+    <td id="Aldgroundroll"></td>
+  </tr>
+  <tr class="seminoleOnly">
+    <th>SE Climb</th>
+    <td id="Dldgroundroll"></td>
+    <td id="Aldgroundroll"></td>
+  </tr>
+  <tr class="seminoleOnly">
+    <th>Peformance Lost</th>
+    <td id="Dldgroundroll"></td>
+    <td id="Aldgroundroll"></td>
+  </tr>
+  <tr class="seminoleOnly">
+    <th>SE Service Ceiling</th>
+    <td id="Dldgroundroll"></td>
+    <td id="Aldgroundroll"></td>
+  </tr>
+  <tr class="seminoleOnly">
+    <th>SE Absolute Ceiling</th>
+    <td id="Dldgroundroll"></td>
+    <td id="Aldgroundroll"></td>
+  </tr>
+  <tr>
+    <th>LD Distance</th>
+    <td id="D50lddistance"></td>
+    <td id="A50lddistance"></td>
+  </tr>
+  <tr>
+    <th>LD 50ft Groundroll</th>
+    <td id="Dldgroundroll"></td>
+    <td id="Aldgroundroll"></td>
+  </tr>
+
+</table>

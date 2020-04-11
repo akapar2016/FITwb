@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="weightbalance/style.css">  
 
-<table id="SelectHeader">
+<table id="selectTable">
   <tr>
     <th id="TailnumberH">Tail Number: 
     </th>
@@ -18,7 +18,7 @@
   </tr>
 </table>
 
-<table id=WBMain class="calcTable">
+<table id=wbTable class="sectTable">
   <tr>
     <th>Item</th>
     <th>Weight</th>
@@ -26,89 +26,88 @@
     <th>Moment</th>
   </tr>
   <tr>
-    <td>Basic Empty Weight</td>
-    <td id="BEW" class="NunVal"></td>
-    <td id="Arm" class="NunVal"></td>
-    <td id="Moment" class="NunVal"></td>
+    <th>Basic Empty Weight</th>
+    <td id="BEW"></td>
+    <td id="Arm"></td>
+    <td id="Moment"></td>
   </tr>
   <tr>
-    <td>Seats 1+2</td>
+    <th>Seats 1+2</th>
     <td id="WSeat12">
       <input type="number" oninput="calculateSeat12(this.value)" placeholder="Weight in lbs" disabled></input>
     </td>
-    <td id="ASeat12" class="NunVal"></td>
-    <td id="MSeat12" class="NunVal"></td>
+    <td id="ASeat12"></td>
+    <td id="MSeat12"></td>
   </tr>
   <tr>
-    <td>Seats 3+4</td>
+    <th>Seats 3+4</th>
     <td id="WSeat34">
       <input type="number" oninput="calculateSeat34(this.value)" placeholder="Weight in lbs" disabled></input>
     </td>
-    <td id="ASeat34" class="NunVal"></td>
-    <td id="MSeat34" class="NunVal"></td>
+    <td id="ASeat34"></td>
+    <td id="MSeat34"></td>
   </tr>
   <tr>
-    <td>Baggage</td>
+    <th>Baggage</th>
     <td id="WCargo">
       <input type="number" oninput="calculateBaggage(this.value)" placeholder="Weight in lbs" disabled></input>
 
     </td>
-    <td id="ACargo" class="NunVal"></td>
-    <td id="MCargo" class="NunVal"></tf>
+    <td id="ACargo"></td>
+    <td id="MCargo"></tf>
   </tr>
-  <tr class="wbfuel">
-    <td id="FuelQuantity">
+  <tr class="wbTableBold">
+    <th id="FuelQuantity">
       Fuel<br>
       <input type="number" oninput="calculateFuel(this.parentNode.id, this.value)" placeholder="Fuel quantity in gl." disabled></input>
-
-    </td>
+    </th>
     <td id="WFuel">
       <input type="number" oninput="calculateFuel(this.parentNode.id, this.value)" placeholder="Weight in lbs" disabled></input>
     </td>
-    <td id="AFuel" class="NunVal"></td>
-    <td id="MFuel" class="NunVal"></td>
+    <td id="AFuel"></td>
+    <td id="MFuel"></td>
   </tr>
-  <tr class="wbdiv">
-  </tr>
-  <tr>
-    <td>Ramp Weight</td>
-    <td id="WRamp" class="NunVal"></td>
-    <td id="ARamp" class="NunVal"></td>
-    <td id="MRamp" class="NunVal"></td>
+  <tr class="wbinvisRow">
   </tr>
   <tr>
-    <td id="FuelQuantityTaxi">
+    <th>Ramp Weight</th>
+    <td id="WRamp"></td>
+    <td id="ARamp"></td>
+    <td id="MRamp"></td>
+  </tr>
+  <tr>
+    <th id="FuelQuantityTaxi">
     Taxi Fuel Burn<br>
       <input type="number" oninput="calculateFuelTaxi(this.parentNode.id, this.value)" placeholder="Fuel quantity in gl." disabled></input>
-    </td>
+    </th>
     <td id="WFuelTaxi">
       <input type="number" oninput="calculateFuelTaxi(this.parentNode.id, this.value)" placeholder="Weight in lbs" disabled></input>
     </td>
-    <td id="AFuelTaxi" class="NunVal"></td>
-    <td id="MFuelTaxi" class="NunVal"></td>
+    <td id="AFuelTaxi"></td>
+    <td id="MFuelTaxi"></td>
   </tr>
   <tr>
-    <td>TakeOff Weight</td>
-    <td id="WTakeOff" class="NunVal"></td>
-    <td id="ATakeOff" class="NunVal"></td>
-    <td id="MTakeOff" class="NunVal"></td>
+    <th>TakeOff Weight</th>
+    <td id="WTakeOff"></td>
+    <td id="ATakeOff"></td>
+    <td id="MTakeOff"></td>
   </tr>
   <tr>
-    <td id="FuelQuantityTrip">
+    <th id="FuelQuantityTrip">
       Trip Fuel Burn<br>
       <input type="number"  oninput="calculateFuelTrip(this.parentNode.id, this.value)" placeholder="Fuel quantity in gl." disabled></input>
-    </td>
+    </th>
     <td id="WFuelTrip">
       <input type="number" oninput="calculateFuelTrip(this.parentNode.id, this.value)" placeholder="Weight in lbs" disabled></input>
     </td>
-    <td id="AFuelTrip" class="NunVal"></td>
-    <td id="MFuelTrip" class="NunVal"></td>
+    <td id="AFuelTrip"></td>
+    <td id="MFuelTrip"></td>
   </tr>
   <tr>
-    <td>Landing Weight</td>
-    <td id="WLanding" class="NunVal"></td>
-    <td id="ALanding" class="NunVal"></td>
-    <td id="MLanding" class="NunVal"></td>
+    <th>Landing Weight</th>
+    <td id="WLanding"></td>
+    <td id="ALanding"></td>
+    <td id="MLanding"></td>
   </tr>
 </table>
 
