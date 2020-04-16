@@ -26,3 +26,22 @@ td.title {
 h2.title {
     margin: 0px;
 }
+
+.mainPara {
+    padding: 5px 30px;
+}
+
+/*
+footer
+*/
+.bottom {
+    padding: 30px;
+    color: #bebebe;
+}
+
+.bottom tr {
+    color: #ffffff;
+}
+.bottom a {
+    color: #64c6ff;
+}

@@ -6,7 +6,7 @@ header('Access-Control-Max-Age: 86400');    // cache for 1 day
 $c = $_GET['a'];
 $url = 'https://www.aviationweather.gov/adds/dataserver_current/'.
         'httpparam?dataSource=metars&requestType=retrieve&format' .
-        '=xml&stationString='.$c.'&hoursBeforeNow=1.5';
+        '=xml&stationString='.$c.'&hoursBeforeNow=4';
 
 $handle = fopen($url, "r");
 

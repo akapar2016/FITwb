@@ -15,10 +15,10 @@
   <tr>
     <th>ICAO</th>
     <td>
-      <input type="search" onsearch="getWeather(this.value, true)" placeholder="ICAO"></input>
+      <input type="search" onsearch="getWeather(this.value, 'D')" placeholder="ICAO"></input>
     </td>
     <td>
-      <input type="search" onsearch="getWeather(this.value, false)" placeholder="ICAO"></input>
+      <input type="search" onsearch="getWeather(this.value, 'A')" placeholder="ICAO"></input>
     </td>
   </tr>
   <tr>
@@ -28,8 +28,20 @@
   </tr>
   <tr>
     <th>Wind</th>
-    <td id="DWeatherWind"></td>
-    <td id="AWeatherWind"></td>
+    <td id="DWeatherWind">
+      <input class="smallInput" type="number" oninput="calcRunwayWinds('D')" placeholder="heading"></input>°
+      <input class="smallInput" type="number" oninput="calcRunwayWinds('D')" placeholder="kts"></input>Kts
+      <br>
+      G<input class="smallInput" type="number" oninput="calcRunwayWinds('D')" placeholder="Gusting kts"></input>
+      <div id="DWeatherGustFactor"></div>
+    </td>
+    <td id="AWeatherWind">
+      <input class="smallInput" type="number" oninput="calcRunwayWinds('A')" placeholder="heading"></input>°
+      <input class="smallInput" type="number" oninput="calcRunwayWinds('A')" placeholder="kts"></input>Kts
+      <br>
+      G<input class="smallInput" type="number" oninput="calcRunwayWinds('A')" placeholder="Gusting kts"></input>
+      <div id="AWeatherGustFactor"></div>
+    </td>
   </tr>
   <tr>
     <th>Visibility</th>
@@ -49,19 +61,19 @@
   <tr>
     <th>Temprature</th>
     <td id="DWeatherTemp">
-        <input type="number" oninput="weatherDepOnEditChange()" placeholder="In C"></input>
+        <input type="number" oninput="weatherOnEditChange('D')" placeholder="In C"></input>
     </td>
     <td id="AWeatherTemp">
-        <input type="number" oninput="weatherArrOnEditChange()" placeholder="In C"></input>
+        <input type="number" oninput="weatherOnEditChange('A')" placeholder="In C"></input>
     </td>
   </tr>
   <tr>
     <th>Dew Point</th>
     <td id="DWeatherDew">
-        <input type="number" oninput="weatherDepOnEditChange()" placeholder="In C"></input>
+        <input type="number" oninput="weatherOnEditChange('D')" placeholder="In C"></input>
     </td>
     <td id="AWeatherDew">
-        <input type="number" oninput="weatherArrOnEditChange()" placeholder="In C"></input>
+        <input type="number" oninput="weatherOnEditChange('A')" placeholder="In C"></input>
     </td>
   </tr>
   <tr>
@@ -72,19 +84,19 @@
   <tr>
     <th>Altimeter</th>
     <td id="DWeatherAlt">
-        <input type="number" oninput="weatherDepOnEditChange()" placeholder="In Hg"></input>
+        <input type="number" oninput="weatherOnEditChange('D')" placeholder="In Hg"></input>
     </td>
     <td id="AWeatherAlt">
-        <input type="number" oninput="weatherArrOnEditChange()" placeholder="In Hg"></input>
+        <input type="number" oninput="weatherOnEditChange('A')" placeholder="In Hg"></input>
     </td>
   </tr>
   <tr>
     <th>Elevation</th>
     <td id="Delevation">
-        <input type="number" oninput="weatherDepOnEditChange()" placeholder="In Ft"></input>
+        <input type="number" oninput="weatherOnEditChange('D')" placeholder="In Ft"></input>
     </td>
     <td id="Aelevation">
-        <input type="number" oninput="weatherArrOnEditChange()" placeholder="In Ft"></input>
+        <input type="number" oninput="weatherOnEditChange('A')" placeholder="In Ft"></input>
     </td>
   </tr>
   <tr>

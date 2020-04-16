@@ -1,6 +1,5 @@
 <link rel="stylesheet" href="airport/style.css">  
 
-
 <table id=airportTable class="sectTable">
   <tr>
     <th>
@@ -15,21 +14,10 @@
   <tr>
     <th>Runways</th>
     <td id="Drunway">
-      <input type="number" oninput="calcDepRunway(this.value)" placeholder="Number"></input>
+      <input type="number" oninput="calcRunwayWinds('D')" placeholder="Number" min="00" max="36"></input>
     </td>
     <td id="Arunway">
-      <input type="number" oninput="calcDepRunway(this.value)" placeholder="Number"></input>
-    </td>
-  </tr>
-  <tr>
-    <th>Wind</th>
-    <td id="Dwind">
-      <input type="number" oninput="calcDepRunway(this.parent)" placeholder="heading"></input>
-      <input type="number" oninput="calcDepRunway(this.parent)" placeholder="kts"></input>
-    </td>
-    <td id="Awind">
-      <input type="number" oninput="calcDepRunway(this.parent)" placeholder="heading"></input>
-      <input type="number" oninput="calcDepRunway(this.parent)" placeholder="kts"></input>
+      <input type="number" oninput="calcRunwayWinds('A')" placeholder="Number" min="00" max="36"></input>
     </td>
   </tr>
   <tr>
@@ -94,3 +82,5 @@
   </tr>
 
 </table>
+
+<script src="airport/AirportEdit.js"></script>

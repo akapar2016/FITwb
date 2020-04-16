@@ -17,10 +17,6 @@ body {
     margin: auto;
 }
 
-#introPara {
-    padding: 30px;
-}
-
 /*Section Full Scale*/
 .sectionHead {
     text-align: center;
@@ -38,6 +34,10 @@ section.lightgraysection {
 }
 section.graysection {
     background-color: #9da0a0;
+    margin: 0px;
+}
+section.darkgraysection {
+    background-color: #272727;
     margin: 0px;
 }
 /*END - Section Full Scale*/
@@ -80,7 +80,6 @@ input:focus, select:focus{
 }
 
 select, input {
-    min-width: 100px;
     height: auto;
     width: 100px;
     border: 3px solid #a5a5a5;

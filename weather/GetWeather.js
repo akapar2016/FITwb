@@ -1,18 +1,14 @@
 
 //Access-Control-Allow-Origin: https://www.aviationweather.gov;
-function getWeather(icao, dep) {
+function getWeather(icao, apt) {
     console.log("getWeather: " + icao);
     
     var xhttp = new XMLHttpRequest();
     var xmlParser = new DOMParser();
     xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
-            if (dep) {
-                editDepWeatherValues(xmlParser.parseFromString(this.responseText, "application/xml"));
-            } else {
-                editArWeatherValues(xmlParser.parseFromString(this.responseText, "application/xml"));
-            }
-
+            console.log(xmlParser.parseFromString(this.responseText, "application/xml"));
+            editWeatherValues(xmlParser.parseFromString(this.responseText, "application/xml"), apt);
         }
     }
     //xhttp.setRequestHeader('Content-Type', 'application/xml');

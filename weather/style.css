@@ -14,3 +14,7 @@
 #weatherTable td:nth-child(3){
     width:40%;
     }
+
+.smallInput {
+        width: 50px;
+    }
