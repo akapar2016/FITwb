@@ -22,8 +22,13 @@
         }
     });
 
-
+/**
+ * Create gray area for WB
+ * @param {length of annimation in ms} annimate 
+ */
 function createAircraftLayout(annimate) {
+    console.log("createAircraftLayout: " + aircraftType.AircraftType);
+    
     annimate = (typeof annimate !== 'undefined') ?  annimate : 1000;
     var ctx = document.getElementById('wbChart').getContext('2d');
     var scatterChartData = {
@@ -74,7 +79,15 @@ function createAircraftLayout(annimate) {
     wbChart.update(annimate);
 }
 
+/**
+ * Plot points on graph for take off and landing 
+ * @param {X val for Takeoff} txVal 
+ * @param {Y val for Takeoff} tyVal 
+ * @param {X val for Landing} lxVal 
+ * @param {Y val for Landing} lyVal 
+ */
 function graphWbPoint(txVal, tyVal, lxVal, lyVal) {
+    console.log("graphWbPoint: (" + txVal + "," + tyVal + ") (" + lxVal + "," + lyVal + ")");
     createAircraftLayout(0);
     console.log("graphTakeoffPoint");
     var tpoint = {

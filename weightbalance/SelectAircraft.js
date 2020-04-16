@@ -27,7 +27,7 @@ function selectAircraft () {
     loadUpIndValues();
     loadUpInitValues();
     createAircraftLayout();
-    calculateTotals();
+    calculateWBTotals();
 }
 
 /**

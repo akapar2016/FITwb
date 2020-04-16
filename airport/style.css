@@ -1,2 +1,15 @@
+#airportTable th:nth-child(1){
+    width:initial;
+    }
+    
+#airportTable td:nth-child(2){
+    width:35%;
+    }
+
+#airportTable td:nth-child(3){
+    width:35%;
+    }
+
+
 .seminoleOnly {
 }

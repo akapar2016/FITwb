@@ -1,18 +1,13 @@
-#weatherTable input {
-    background-color: #ffffff;
-    height:inherit; 
-}
-
 #weatherTable th:nth-child(1){
     width:initial;
     }
     
 #weatherTable td:nth-child(2){
-    width:40%;
+    width:35%;
     }
 
 #weatherTable td:nth-child(3){
-    width:40%;
+    width:35%;
     }
 
 .smallInput {

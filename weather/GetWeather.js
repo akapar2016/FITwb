@@ -9,6 +9,8 @@ function getWeather(icao, apt) {
         if (this.readyState == 4 && this.status == 200) {
             console.log(xmlParser.parseFromString(this.responseText, "application/xml"));
             editWeatherValues(xmlParser.parseFromString(this.responseText, "application/xml"), apt);
+            weatherOnEditChange(apt);
+            calcRunwayWinds(apt);
         }
     }
     //xhttp.setRequestHeader('Content-Type', 'application/xml');

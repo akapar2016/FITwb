@@ -1,5 +1,5 @@
 function editWeatherValues(value, apt) {
-    console.log("editDepWeatherValues");
+    console.log("editWeatherValues:" + apt);
 
     value = value.getElementsByTagName("METAR")[0];
 
@@ -56,13 +56,10 @@ function editWeatherValues(value, apt) {
     document.getElementById(apt + "WeatherRaw").innerHTML = 
         ((value.getElementsByTagName("raw_text").length > 0) ?
         value.getElementsByTagName("raw_text")[0].childNodes[0].nodeValue : "--"); 
-
-    weatherOnEditChange(apt);
-    calcRunwayWinds(apt);
 }
 
 function weatherOnEditChange(apt) {
-    console.log("weatherOnEditChange");
+    console.log("weatherOnEditChange: " + apt);
 
     document.getElementById(apt + "WeatherGustFactor").innerHTML =  
         ((document.getElementById(apt + "WeatherWind").getElementsByTagName("input")[2].value != 0) ? 
